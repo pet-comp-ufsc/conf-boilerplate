@@ -7,34 +7,34 @@ module.exports = {
 
     // Conference info
     conf: {
-      name: "Conference name",
-      description: "Conference description",
-      date: "November 15",
+      name: "SECCOM",
+      description: "Semana Acadêmica de Ciência da Computação",
+      date: "13-17 de outubro",
       // If your event is free, just comment this line
-      price: "$100",
-      venue: "Coco Bongo",
-      address: "Boulevard Kukulcan, 30",
-      city: "Cancún",
-      state: "Quintana"
+      // price: "$100",
+      venue: "Auditório EPS - UFSC",
+      address: "Universidade Federal de Santa Catarina",
+      city: "Florianópolis",
+      state: "Santa Catarina"
     },
 
     // The Call To Action button at the header,
     // If you don't want this, just remove the callToAction property.
-    callToAction: {
-        text: "Register now!",
-        link: "http://eventick.com.br"
-    },
+    // callToAction: {
+    //     text: "Register now!",
+    //     link: "http://eventick.com.br"
+    // },
 
     // "Fork me on GitHub", if you don't want this, just remove the forkButton property
     forkButton: {
-        repository: "https://github.com/braziljs/conf-boilerplate"
+        repository: "https://github.com/pet-comp-ufsc/conf-boilerplate"
     },
 
     // Site info
     site: {
-      theme: "yellow-swan",
-      url: "http://braziljs.github.io/conf-boilerplate/",
-      googleanalytics: "UA-33656081-1"
+      theme: "seccom",
+      url: "https://github.com/pet-comp-ufsc/conf-boilerplate",
+      googleanalytics: "UA-3078789-2"
     },
 
     // Active sections on the website
@@ -52,137 +52,377 @@ module.exports = {
 
     // Labels which you can translate to other languages
     labels: {
-      about: "About",
-      location: "Location",
-      speakers: "Speakers",
-      schedule: "Schedule",
-      sponsors: "Sponsors",
-      partners: "Partners",
-      contact: "Contact"
+      about: "Sobre",
+      location: "Localização",
+      speakers: "Palestrantes",
+      schedule: "Agenda",
+      sponsors: "Patrocínio",
+      partners: "Apoio",
+      contact: "Contato"
     },
 
     // The entire schedule
     schedule: [
       {
-        name: "Check-in / Breakfast",
-        time: "9h00"
+        date: "13",
+        name: "Segunda",
+        talks: [
+          {
+            name: "Guilherme Berghauser",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "?",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Desenvolvimento de aplicativos Firefox OS",
+              description: "?",
+              time: "10h00"
+            }
+          },
+          {
+            name: "Almoço",
+            time: "12h00"
+          },
+          {
+            name: "Em breve...",
+            time: "13h30"
+          },
+          {
+            name: "Marcelo Barbosa",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "Fedora Ambassadors",
+            link: {
+              href: "http://www.firemanxbr.org/",
+              text: "firemanxbr.org"
+            },
+            presentation: {
+              title: "Como contribuir com o Projeto Fedora",
+              description: "?",
+              time: "14h30"
+            }
+          },
+          {
+            name: "Coffee-break",
+            time: "15h30"
+          },
+          {
+            name: "Mário Dantas",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "?",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Ambient Assisted Living",
+              description: "?",
+              time: "16h00"
+            }
+          },
+          {
+            name: "?",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "Chaordic",
+            link: {
+              href: "http://github.com/stevie",
+              text: "@stevie"
+            },
+            presentation: {
+              title: "HTML, CSS e Javascript de alto desempenho",
+              description: "?",
+              time: "18h30"
+            }
+          }
+        ]
       },
       {
-        name: "Linus Torvalds",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Linux Foundation",
-        link: {
-          href: "http://twitter.com/linus",
-          text: "@linus"
-        },
-        presentation: {
-          title: "Digging into a Linux Kernel",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "10h00"
-        }
+        date: "14",
+        name: "Terça",
+        talks: [
+          {
+            name: "Em breve...",
+            time: "10h00"
+          },
+          {
+            name: "Almoço",
+            time: "12h00"
+          },
+          {
+            name: "Nassor Paulino da Silva",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "Google Developer Group",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Go Lang",
+              description: "?",
+              time: "13h30"
+            }
+          },
+          {
+            name: "Marcelo Barbosa",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "Fedora Ambassadors",
+            link: {
+              href: "http://www.firemanxbr.org/",
+              text: "firemanxbr.org"
+            },
+            presentation: {
+              title: "Fedora como solução para sistemas embarcados",
+              description: "?",
+              time: "14h30"
+            }
+          },
+          {
+            name: "Coffee-break",
+            time: "15h30"
+          },
+          {
+            name: "Laércio L. Pilla",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "Laércio Lima Pilla é professor no Departamento de Informática e Estatística da Universidade Federal de Santa Catarina. Ele obteve seu título de Doutor em Ciência da Computação em 2014 em uma cotutela entra a Universidade Federal do Rio Grande do Sul e a Université de Grenoble na França. Seus tópicos de pesquisa envolvem escalonamento, balanceamento de carga, perfilamento de plataformas, predição de desempenho e redução de consumo de energia.",
+            company: "?",
+            link: {
+              href: "http://lattes.cnpq.br/2020489905881170",
+              text: "lattes.cnpq.br/2020489905881170"
+            },
+            presentation: {
+              title: "O problema de pequenos desempenhos em grandes máquinas",
+              description: "A palestra abordará os desafios na obtenção de alto desempenho com aplicações científicas em máquinas paralelas. Entre as questões a serem discutidas estão: como aplicações científicas funcionam; como plataformas paralelas de alto desempenho são organizadas; quais são as origens dos problemas de desempenho de comunicação e desbalanceamento de carga; e como podemos tratar destes problemas.",
+              time: "16h00"
+            }
+          }
+        ]
       },
       {
-        name: "Bill Gates",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Microsoft",
-        link: {
-          href: "http://github.com/billy95",
-          text: "@billy95"
-        },
-        presentation: {
-          title: "Introducing Windows 12",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "11h00"
-        }
+        date: "15",
+        name: "Quarta",
+        talks: [
+          {
+            name: "Tarcísio Crocomo",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "Audaces",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Python parte 1",
+              description: "?",
+              time: "16h00"
+            }
+          },
+          {
+            name: "Almoço",
+            time: "12h00"
+          },
+          {
+            name: "Chaordic",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "Chaordic",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Machine Learning",
+              description: "?",
+              time: "13h30"
+            }
+          },
+          {
+            name: "Aldo von Wangenheim",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "UFSC",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "TV Digital Interativa",
+              description: "?",
+              time: "14h30"
+            }
+          },
+          {
+            name: "Coffee-break",
+            time: "15h30"
+          },
+          {
+            name: "Michel Wilhelm",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "?",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Mozilla Developmer Network",
+              description: "?",
+              time: "16h00"
+            }
+          },
+          {
+            name: "Tarcísio Crocomo",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "Audaces",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Python parte 2",
+              description: "?",
+              time: "18h00"
+            }
+          }
+        ]
       },
       {
-        name: "Lunch",
-        time: "12h00"
+        date: "16",
+        name: "Quinta",
+        talks: [
+          {
+            name: "Chaordic",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "Chaordic",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Node.JS",
+              description: "?",
+              time: "10h00"
+            }
+          },
+          {
+            name: "Almoço",
+            time: "12h00"
+          },
+          {
+            name: "Antônio A. F. Loureiro",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "UFMG",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "?",
+              description: "?",
+              time: "13h30"
+            }
+          },
+          {
+            name: "Márcio B. Castro",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "?",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Processadores Manycore...",
+              description: "?",
+              time: "14h30"
+            }
+          },
+          {
+            name: "Coffee-break",
+            time: "15h30"
+          },
+          {
+            name: "Michel Wilhelm",
+            photo: "themes/seccom/img/speaker.jpg",
+            bio: "?",
+            company: "?",
+            link: {
+              href: "?",
+              text: "?"
+            },
+            presentation: {
+              title: "Mozilla Developer Network",
+              description: "?",
+              time: "16h00"
+            }
+          },
+          {
+            name: "Em breve...",
+            time: "18h00"
+          }
+        ]
       },
       {
-        name: "Chuck Norris",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Delta Command",
-        link: {
-          href: "http://twitter.com/littlechuck",
-          text: "@littlechuck"
-        },
-        presentation: {
-          title: "How to kill a elephant with one finger",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "13h00"
-        }
-      },
-      {
-        name: "Steve Jobs",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Apple, Inc.",
-        link: {
-          href: "http://github.com/stevie",
-          text: "@stevie"
-        },
-        presentation: {
-          title: "Presenting iPad",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "14h00"
-        }
-      },
-      {
-        name: "Coffee-break",
-        time: "15h00"
-      },
-      {
-        name: "Mark Zuckerberg",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Facebook",
-        link: {
-          href: "http://twitter.com/zuck",
-          text: "@zuck"
-        },
-        presentation: {
-          title: "Revealing Facebook Secrets",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "16h00"
-        }
-      },
-      {
-        name: "Steve Wozniak",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Apple, Inc.",
-        link: {
-          href: "http://twitter.com/woz",
-          text: "@woz"
-        },
-        presentation: {
-          title: "Why do I prefer Android over iPhone",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "17h00"
-        }
+        date: "17",
+        name: "Sexta",
+        talks: [
+          {
+            name: "Em breve...",
+            time: "10h00"
+          },
+          {
+            name: "Almoço",
+            time: "12h00"
+          },
+          {
+            name: "Em breve...",
+            time: "13h30"
+          },
+          {
+            name: "Em breve...",
+            time: "14h30"
+          },
+          {
+            name: "Coffee-break",
+            time: "15h30"
+          },
+          {
+            name: "Em breve...",
+            time: "16h00"
+          },
+          {
+            name: "Em breve...",
+            time: "18h00"
+          }
+        ]
       }
     ],
 
     // List of Sponsors
     sponsors: [
-      {
+      /*{
         name: "Eventick",
-        logo: "themes/yellow-swan/img/sponsor.png",
+        logo: "themes/seccom/img/sponsor.png",
         url: "http://eventick.com.br"
-      }
+      }*/
     ],
 
     // List of Partners
     partners: [
-      {
+      /*{
         name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
+        logo: "themes/seccom/img/partner.png",
         url: "http://braziljs.org"
-      }
+      }*/
     ],
 
     // Theme path
