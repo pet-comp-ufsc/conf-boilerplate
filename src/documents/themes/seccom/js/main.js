@@ -79,6 +79,21 @@
 
             conf.menu.animateTo(event.target);
         });
+
+        $('.schedule-tbl .day-header').on('click', function () {
+            var dayHeader = $(this);
+            var dayContainers = $('.schedule-days');
+
+            dayHeader
+                .addClass('active')
+                .siblings().removeClass('active');
+
+
+            dayContainers.find('.day')
+                .removeClass('active')
+                .eq(dayHeader.index())
+                    .addClass('active');
+        });
     };
 
     conf.menu.animateTo = function (link) {
