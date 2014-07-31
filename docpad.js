@@ -43,8 +43,8 @@ module.exports = {
     sections: [
       'about',
       'location',
+			'schedule',
       'speakers',
-      'schedule',
       'sponsors',
       'partners'
       // 'contact'
@@ -60,70 +60,170 @@ module.exports = {
       partners: "Apoio",
       contact: "Contato"
     },
-
-    // The entire schedule
-    schedule: [
-      {
-        date: "13",
-        name: "Segunda",
-        talks: [
-          {
-            name: "Guilherme Berghauser",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "?",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "Desenvolvimento de aplicativos Firefox OS",
-              description: "?",
-              time: "10h00"
-            }
-          },
-          {
-            name: "Almoço",
-            time: "12h00"
-          },
-          {
-            name: "Em breve...",
-            time: "13h30"
-          },
-          {
-            name: "Marcelo Barbosa",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "Fedora Ambassadors",
-            link: {
-              href: "http://www.firemanxbr.org/",
-              text: "firemanxbr.org"
-            },
-            presentation: {
-              title: "Como contribuir com o Projeto Fedora",
-              description: "?",
-              time: "14h30"
-            }
-          },
-          {
-            name: "Coffee-break",
-            time: "15h30"
-          },
-          {
-            name: "Mário Dantas",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "?",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "Ambient Assisted Living",
-              description: "?",
-              time: "16h00"
-            }
-          },
+		
+		speakers: [
+			// 0
+			{
+				name: "Aldo von Wangenheim",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				}
+			},
+			{
+				name: "Antônio A. F. Loureiro",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				}
+			},
+			{
+				name: "Guilherme Berghauser",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				}
+			},
+			// 3
+			{
+				name: "Karina G. Roggia",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				}
+			},
+			{
+				name: "Laércio L. Pilla",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "Laércio Lima Pilla é professor no Departamento de Informática e Estatística da Universidade Federal de Santa Catarina. Ele obteve seu título de Doutor em Ciência da Computação em 2014 em uma cotutela entra a Universidade Federal do Rio Grande do Sul e a Université de Grenoble na França. Seus tópicos de pesquisa envolvem escalonamento, balanceamento de carga, perfilamento de plataformas, predição de desempenho e redução de consumo de energia.",
+				company: "?",
+				link: {
+					href: "http://lattes.cnpq.br/2020489905881170",
+					text: "lattes.cnpq.br/2020489905881170"
+				}
+			},
+			{
+				name: "Márcio B. Castro",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "Professor do Departamento de Informática e Estatística da Universidade Federal de Santa Catarina (UFSC). Doutor em Ciência da Computação pela Université de Grenoble (França). Bacharel e Mestre em Ciência da Computação pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS). Recebeu título de Láurea Acadêmica da PUCRS e prêmio de Aluno Destaque da Sociedade Brasileira de Computação (SBC) em 2006 devido ao destacado aproveitamento acadêmico em atividades de ensino, pesquisa e extensão durante a graduação. Conquistou o prêmio de melhor tese de doutorado do Concurso de Teses e Dissertações em Arquitetura de Computadores e Computação de Alto Desempenho (WSCAD-CTD) em 2013. Realizou pós-doutorado em 2013 no Institut National de Recherche en Informatique et en Automatique (INRIA), França. Posteriormente, realizou pós-doutorado no Grupo de Processamento Paralelo e Distribuído (GPPD) da Universidade Federal do Rio Grande do Sul (UFRGS). Participa do Laboratório Internacional em Processamento de Alto Desempenho e Informática Ambiente (LICIA), o qual reúne pesquisadores do Instituto de Informática da UFRGS e do Laboratoire d'Informatique de Grenoble (LIG). Possui experiência na área de Ciência da Computação, com ênfase em Processamento Paralelo e Distribuído, atuando principalmente nos seguintes temas: modelos de programação paralela e distribuída, arquiteturas multicore e manycore, aplicações científicas paralelas, afinidade de dados e threads.",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				}
+			},
+			// 6
+			{ 
+				name: "Marcelo Barbosa",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "Fedora Ambassadors",
+				link: {
+					href: "http://www.firemanxbr.org/",
+					text: "firemanxbr.org"
+				},
+			},
+			{
+				name: "Mário Dantas",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				},
+			},
+			{
+				name: "Michel Wilhelm",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				}
+			},
+			// 9
+			{
+				name: "Nassor P. da Silva",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				},
+			},
+			{
+				name: "Sérgio Peters",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "Possui graduação em Engenharia Mecânica pela Universidade Federal de Santa Catarina (1986), mestrado em Engenharia Mecânica pela Universidade Federal de Santa Catarina (1989) e doutorado em Engenharia Mecânica pela Universidade Federal de Santa Catarina (1994). Ocupou diversos cargos administrativos como, chefe e sub-chefe de departamento, coordenador de curso e Diretor Geral do novo Campus UFSC na cidade de Araranguá SC, de fevereiro de 2009 a maio de 2012. Atualmente é professor Associado IV da Universidade Federal de Santa Catarina - UFSC, junto ao Departamento de Informática e Estatística - INE e pesquisador na área de métodos numéricos para resolução das equações diferenciais parciais que modelam o escoamento de fluidos e a transferência calor.",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				}
+			},
+			{
+				name: "Tarcísio E. M. Crocomo",
+				photo: "themes/seccom/img/speaker.jpg",
+				bio: "?",
+				company: "?",
+				link: {
+					href: "?",
+					text: "?"
+				},
+			}
+		],
+		
+		// The entire schedule
+		schedule: [
+			{
+				date: "13",
+				name: "Segunda",
+				talks: [
+					{
+						title: "Desenvolvimento de aplicativos Firefox OS",
+						description: "?",
+						time: "10h00",
+						speaker: 2,
+					},
+					{
+						name: "Almoço",
+						time: "12h00"
+					},
+					{
+						name: "Em breve...",
+						time: "13h30"
+					},
+					{
+						title: "Como contribuir com o Projeto Fedora",
+						description: "?",
+						time: "14h30",
+						speaker: 6
+					},
+					{
+						name: "Coffee-break",
+						time: "15h30"
+					},
+					{
+						title: "Ambient Assisted Living",
+						description: "?",
+						time: "16h00",
+						speaker: 7
+					},
           {
             name: "?",
             photo: "themes/seccom/img/speaker.jpg",
@@ -154,53 +254,26 @@ module.exports = {
             time: "12h00"
           },
           {
-            name: "Nassor Paulino da Silva",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "Google Developer Group",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "Go Lang",
-              description: "?",
-              time: "13h30"
-            }
+						title: "Go Lang",
+						description: "?",
+						time: "13h30",
+						speaker: 9
           },
           {
-            name: "Marcelo Barbosa",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "Fedora Ambassadors",
-            link: {
-              href: "http://www.firemanxbr.org/",
-              text: "firemanxbr.org"
-            },
-            presentation: {
-              title: "Fedora como solução para sistemas embarcados",
-              description: "?",
-              time: "14h30"
-            }
+						title: "Fedora como solução para sistemas embarcados",
+						description: "?",
+						time: "14h30",
+						speaker: 6
           },
           {
             name: "Coffee-break",
             time: "15h30"
           },
           {
-            name: "Laércio L. Pilla",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "Laércio Lima Pilla é professor no Departamento de Informática e Estatística da Universidade Federal de Santa Catarina. Ele obteve seu título de Doutor em Ciência da Computação em 2014 em uma cotutela entra a Universidade Federal do Rio Grande do Sul e a Université de Grenoble na França. Seus tópicos de pesquisa envolvem escalonamento, balanceamento de carga, perfilamento de plataformas, predição de desempenho e redução de consumo de energia.",
-            company: "?",
-            link: {
-              href: "http://lattes.cnpq.br/2020489905881170",
-              text: "lattes.cnpq.br/2020489905881170"
-            },
-            presentation: {
-              title: "O problema de pequenos desempenhos em grandes máquinas",
-              description: "A palestra abordará os desafios na obtenção de alto desempenho com aplicações científicas em máquinas paralelas. Entre as questões a serem discutidas estão: como aplicações científicas funcionam; como plataformas paralelas de alto desempenho são organizadas; quais são as origens dos problemas de desempenho de comunicação e desbalanceamento de carga; e como podemos tratar destes problemas.",
-              time: "16h00"
-            }
+						title: "O problema de pequenos desempenhos em grandes máquinas",
+						description: "A palestra abordará os desafios na obtenção de alto desempenho com aplicações científicas em máquinas paralelas. Entre as questões a serem discutidas estão: como aplicações científicas funcionam; como plataformas paralelas de alto desempenho são organizadas; quais são as origens dos problemas de desempenho de comunicação e desbalanceamento de carga; e como podemos tratar destes problemas.",
+						time: "16h00",
+						speaker: 4
           }
         ]
       },
@@ -209,19 +282,10 @@ module.exports = {
         name: "Quarta",
         talks: [
           {
-            name: "Tarcísio Crocomo",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "Audaces",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "Python parte 1",
-              description: "?",
-              time: "16h00"
-            }
+						title: "Python parte 1",
+						description: "?",
+						time: "16h00",
+						speaker: 11
           },
           {
             name: "Almoço",
@@ -243,53 +307,26 @@ module.exports = {
             }
           },
           {
-            name: "Aldo von Wangenheim",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "UFSC",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "TV Digital Interativa",
-              description: "?",
-              time: "14h30"
-            }
+						title: "TV Digital Interativa",
+						description: "?",
+						time: "14h30",
+						speaker: 0
           },
           {
             name: "Coffee-break",
             time: "15h30"
           },
           {
-            name: "Michel Wilhelm",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "?",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "Mozilla Developmer Network",
-              description: "?",
-              time: "16h00"
-            }
+						title: "Mozilla Developmer Network",
+						description: "?",
+						time: "16h00",
+						speaker: 8
           },
           {
-            name: "Tarcísio Crocomo",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "Audaces",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "Python parte 2",
-              description: "?",
-              time: "18h00"
-            }
+						title: "Python parte 2",
+						description: "?",
+						time: "18h00",
+						speaker: 11
           }
         ]
       },
@@ -317,53 +354,24 @@ module.exports = {
             time: "12h00"
           },
           {
-            name: "Antônio A. F. Loureiro",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "UFMG",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "?",
-              description: "?",
-              time: "13h30"
-            }
+						title: "?",
+						description: "?",
+						time: "13h30",
+						speaker: 1
           },
           {
-            name: "Márcio B. Castro",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "?",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "Processadores Manycore...",
-              description: "?",
-              time: "14h30"
-            }
+            title: "Processadores Manycore...",
+						description: "?",
+						time: "14h30",
+						speaker: 5
           },
           {
             name: "Coffee-break",
             time: "15h30"
           },
           {
-            name: "Michel Wilhelm",
-            photo: "themes/seccom/img/speaker.jpg",
-            bio: "?",
-            company: "?",
-            link: {
-              href: "?",
-              text: "?"
-            },
-            presentation: {
-              title: "Mozilla Developer Network",
-              description: "?",
-              time: "16h00"
-            }
+            name: "Em breve...",
+            time: "16h00"
           },
           {
             name: "Em breve...",
