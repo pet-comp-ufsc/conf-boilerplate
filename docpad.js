@@ -25,9 +25,9 @@ module.exports = {
         // },
 
         // "Fork me on GitHub", if you don't want this, just remove the forkButton property
-        forkButton: {
-            repository: "https://github.com/pet-comp-ufsc/conf-boilerplate"
-        },
+        // forkButton: {
+        //     repository: "https://github.com/pet-comp-ufsc/conf-boilerplate"
+        // },
 
         // Site info
         site: {
@@ -70,6 +70,11 @@ module.exports = {
 						photo: "themes/seccom/img/berghauser.png",
 						bio: "Estudante de Sistema de Informação pela UTFPR – Pato Branco, voluntário da Mozilla (Mozillian), participa do projeto Firefox Student Ambassador,membro do grupo de usuários de Software Livre PatoLivre, Sócio-Fundador da QiLeverage empresa especializada no desenvolvimento de softwares educacionais, foi professor durante sete anos e nos últimos quatro anos se dedica ao desenvolvimento web e mobile.",
 						company: "Mozilla"
+					},
+					"Júlia Laitano": {
+						photo: "themes/seccom/img/speaker.jpg",
+						bio: "?",
+						company: "Jointi.us"
 					},
 					"Karina G. Roggia": {
 						photo: "themes/seccom/img/karina.png",
@@ -119,7 +124,7 @@ module.exports = {
 						company: "Google Developers Group - Floripa"
 					},
 					"Sérgio Peters": {
-						photo: "themes/seccom/img/speaker.jpg",
+						photo: "themes/seccom/img/peters.png",
 						bio: "Possui graduação, mestrado e doutorado em Engenharia Mecânica pela Universidade Federal de Santa Catarina. Atualmente é professor do Departamento de Informática e Estatística e pesquisador na área de métodos numéricos para resolução das equações diferenciais parciais que modelam o escoamento de fluidos e a transferência de calor.",
 						company: "UFSC"
 					},
