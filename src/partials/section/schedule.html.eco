@@ -16,19 +16,13 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       <tbody class="day day-<%= index %> <% if index == 0: %>active<% end %>">
         <% for slot in day.talks: %>
           <% if slot.speaker: %>
-            <tr>
-              <td class="schedule-time"><%= slot.time %></td>
-              <td class="schedule-slot">
-	              <% if @speakers[slot.speaker].photo: %>
-	                <span class="speaker-photo">
-	                  <img class="photo" src="<%= @speakers[slot.speaker].photo %>" alt="<%= @speakers[slot.speaker].name %>">
-                	</span>
-              	<% end %>
-              	<%= slot.title %>
-              	<span class="speakers-name"><%= @speakers[slot.speaker].name %></span>
-            	</td>
-            <td class="schedule-description"><%= slot.description %></td>
-            </tr>
+						<td class="schedule-time"><%= slot.time %></td>
+						<td class="schedule-slot">
+							
+							<%= slot.title %>
+							<span class="speakers-name"><%= slot.speaker %></span>
+						</td>
+						<td class="schedule-description"><%= slot.description %></td>
           <% else: %>
             <tr class="schedule-other">
               <td class="schedule-time"><%= slot.time %></td>

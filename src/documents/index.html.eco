@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<% for section in @sections : %>
+<% for section in @sections: %>
   <!-- <%= section.toUpperCase() %> -->
 
   <section class="<%= section %>" id="<%= section %>">
