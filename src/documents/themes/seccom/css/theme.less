@@ -146,10 +146,11 @@ nav {background: #2b2b2b;}
 }
 .schedule-tbl table {background:#fff;}
 .schedule-tbl td, .schedule-tbl th {border-bottom:1px solid #e7e7e7;}
-.schedule-tbl tbody {display: none;}
-.schedule-tbl tbody.active {display: block;}
+.schedule-tbl tbody:not(.active) {display: none;}
 .schedule-tbl tbody tr:nth-child(2n+1) {background:#f6f6f6;}
 .schedule-tbl th {color:#2b2b2b;}
+.schedule-tbl .schedule-time {width: 40px;}
+.schedule-tbl .schedule-slot {width: 250px;}
 .schedule-tbl .speaker-photo .photo {box-shadow: 0 0 0 1px rgba(0,0,0,.3);}
 .schedule-tbl .speakers-name {color:#999;}
 .schedule-slot {color:#2b2b2b;}
