@@ -60,116 +60,75 @@ module.exports = {
             contact: "Contato"
         },
 
-        speakers: {
-            "Aldo von Wangenheim": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                }
-            },
-            "Antônio A. F. Loureiro": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                }
-            },
-            "Guilherme Berghauser": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                }
-            },
-            "Karina G. Roggia": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                }
-            },
-            "Laércio L. Pilla": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "Laércio Lima Pilla é professor no Departamento de Informática e Estatística da Universidade Federal de Santa Catarina. Ele obteve seu título de Doutor em Ciência da Computação em 2014 em uma cotutela entra a Universidade Federal do Rio Grande do Sul e a Université de Grenoble na França. Seus tópicos de pesquisa envolvem escalonamento, balanceamento de carga, perfilamento de plataformas, predição de desempenho e redução de consumo de energia.",
-                company: "?",
-                link: {
-                    href: "http://lattes.cnpq.br/2020489905881170",
-                    text: "lattes.cnpq.br/2020489905881170"
-                }
-            },
-            "Márcio B. Castro": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "Professor do Departamento de Informática e Estatística da Universidade Federal de Santa Catarina (UFSC). Doutor em Ciência da Computação pela Université de Grenoble (França). Bacharel e Mestre em Ciência da Computação pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS). Recebeu título de Láurea Acadêmica da PUCRS e prêmio de Aluno Destaque da Sociedade Brasileira de Computação (SBC) em 2006 devido ao destacado aproveitamento acadêmico em atividades de ensino, pesquisa e extensão durante a graduação. Conquistou o prêmio de melhor tese de doutorado do Concurso de Teses e Dissertações em Arquitetura de Computadores e Computação de Alto Desempenho (WSCAD-CTD) em 2013. Realizou pós-doutorado em 2013 no Institut National de Recherche en Informatique et en Automatique (INRIA), França. Posteriormente, realizou pós-doutorado no Grupo de Processamento Paralelo e Distribuído (GPPD) da Universidade Federal do Rio Grande do Sul (UFRGS). Participa do Laboratório Internacional em Processamento de Alto Desempenho e Informática Ambiente (LICIA), o qual reúne pesquisadores do Instituto de Informática da UFRGS e do Laboratoire d'Informatique de Grenoble (LIG). Possui experiência na área de Ciência da Computação, com ênfase em Processamento Paralelo e Distribuído, atuando principalmente nos seguintes temas: modelos de programação paralela e distribuída, arquiteturas multicore e manycore, aplicações científicas paralelas, afinidade de dados e threads.",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                }
-            },
-            "Marcelo Barbosa": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "Fedora Ambassadors",
-                link: {
-                    href: "http://www.firemanxbr.org/",
-                    text: "firemanxbr.org"
-                },
-            },
-            "Mário Dantas": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                },
-            },
-            "Michel Wilhelm": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                }
-            },
-            "Nassor P. da Silva": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                },
-            },
-            "Sérgio Peters": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "Possui graduação em Engenharia Mecânica pela Universidade Federal de Santa Catarina (1986), mestrado em Engenharia Mecânica pela Universidade Federal de Santa Catarina (1989) e doutorado em Engenharia Mecânica pela Universidade Federal de Santa Catarina (1994). Ocupou diversos cargos administrativos como, chefe e sub-chefe de departamento, coordenador de curso e Diretor Geral do novo Campus UFSC na cidade de Araranguá SC, de fevereiro de 2009 a maio de 2012. Atualmente é professor Associado IV da Universidade Federal de Santa Catarina - UFSC, junto ao Departamento de Informática e Estatística - INE e pesquisador na área de métodos numéricos para resolução das equações diferenciais parciais que modelam o escoamento de fluidos e a transferência calor.",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                }
-            },
-            "Tarcísio E. M. Crocomo": {
-                photo: "themes/seccom/img/speaker.jpg",
-                bio: "?",
-                company: "?",
-                link: {
-                    href: "?",
-                    text: "?"
-                },
-            }
-        },
+				speakers: {
+					"Antônio A. F. Loureiro": {
+						photo: "themes/seccom/img/loureiro.png",
+						bio: "?",
+						company: "UFMG"
+					},
+					"Guilherme Berghauser": {
+						photo: "themes/seccom/img/berghauser.png",
+						bio: "Estudante de Sistema de Informação pela UTFPR – Pato Branco, voluntário da Mozilla (Mozillian), participa do projeto Firefox Student Ambassador,membro do grupo de usuários de Software Livre PatoLivre, Sócio-Fundador da QiLeverage empresa especializada no desenvolvimento de softwares educacionais, foi professor durante sete anos e nos últimos quatro anos se dedica ao desenvolvimento web e mobile.",
+						company: "Mozilla"
+					},
+					"Karina G. Roggia": {
+						photo: "themes/seccom/img/karina.png",
+						bio: "Possui Doutorado em Matemática pelo Instituto Superior Técnico em Lisboa, Portugal. É Bacharel e Mestre em Ciência da Computação pela Universidade Federal do Rio Grande do Sul. Foi membro do SQIG, vinculado ao Instituto de Telecomunicações em Portugal e atualmente é pesquisadora no i3G - Instituto de Governo Eletrônico, Inteligências e Sistemas. Tem experiência docente na graduação em Ciência da Computação tendo ministrado as disciplinas Teoria dos Grafos e Análise Combinatória, Linguagens Formais e Autômatos e Teoria das Categorias.",
+						company: "UFSC",
+						link: {
+							href: "http://lattes.cnpq.br/7786281602726587",
+							text: "currículo lattes"
+						}
+					},
+					"Laércio L. Pilla": {
+						photo: "themes/seccom/img/laercio.png",
+						bio: "Laércio Lima Pilla é professor no Departamento de Informática e Estatística da Universidade Federal de Santa Catarina. Ele obteve seu título de Doutor em Ciência da Computação em 2014 em uma cotutela entra a Universidade Federal do Rio Grande do Sul e a Université de Grenoble na França. Seus tópicos de pesquisa envolvem escalonamento, balanceamento de carga, perfilamento de plataformas, predição de desempenho e redução de consumo de energia.",
+						company: "UFSC",
+						link: {
+							href: "http://lattes.cnpq.br/2020489905881170",
+							text: "currículo lattes"
+						}
+					},
+					"Márcio B. Castro": {
+						photo: "themes/seccom/img/marcio.png",
+						bio: "Professor do Departamento de Informática e Estatística da Universidade Federal de Santa Catarina. Doutor em Ciência da Computação pela Université de Grenoble (França). Bacharel e Mestre em Ciência da Computação pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS). Participa do Laboratório Internacional em Processamento de Alto Desempenho e Informática Ambiente (LICIA). Possui experiência na área de Ciência da Computação, com ênfase em Processamento Paralelo e Distribuído, atuando principalmente nos seguintes temas: modelos de programação paralela e distribuída, arquiteturas multicore e manycore, aplicações científicas paralelas, afinidade de dados e threads.",
+						company: "UFSC"
+					},
+					"Marcelo Barbosa": {
+					photo: "themes/seccom/img/firemanxbr.png",
+						bio: "Evangelista open source, membro da equipe de Packager do Fedora onde atua também como Ambassador e Coordenador do L10N Brazilian Portuguese Team. Programador para soluções embedded focadas em linux e hardware ARM, atualmente envolvido com projetos de Virtualização com KVM e oVirt como também trabalhando com o buildsystem YOCTO na empresa Datacom. Sua última contribuição tem sido na portabilidade dos frameworks de visão computacional para o Fedora como também portando pacotes e bibliotecas Python para a distribuição.",
+						company: "Fedora Ambassadors",
+						link: {
+							href: "http://www.firemanxbr.org/",
+							text: "firemanxbr.org"
+						}	
+					},
+					"Mário Dantas": {
+						photo: "themes/seccom/img/dantas.png",
+						bio: "?",
+						company: "UFSC"
+					},
+					"Michel Wilhelm": {
+						photo: "themes/seccom/img/speaker.jpg",
+						bio: "?",
+						company: "Mozilla"
+					},
+					"Nassor P. da Silva": {
+						photo: "themes/seccom/img/speaker.jpg",
+						bio: "?",
+						company: "Google Developers Group - Floripa"
+					},
+					"Sérgio Peters": {
+						photo: "themes/seccom/img/speaker.jpg",
+						bio: "Possui graduação, mestrado e doutorado em Engenharia Mecânica pela Universidade Federal de Santa Catarina. Atualmente é professor do Departamento de Informática e Estatística e pesquisador na área de métodos numéricos para resolução das equações diferenciais parciais que modelam o escoamento de fluidos e a transferência de calor.",
+						company: "UFSC"
+					},
+					"Tarcísio E. M. Crocomo": {
+						photo: "themes/seccom/img/cara_do_tarcisio.png",
+						bio: "?",
+						company: "Audaces"
+					}
+				},
 
         // The entire schedule
         schedule: [
