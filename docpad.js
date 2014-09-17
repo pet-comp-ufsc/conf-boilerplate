@@ -367,21 +367,38 @@ module.exports = {
             }
         ],
         
-        // List of Sponsors
-        sponsors: [
-            /*"Eventick": {
-              logo: "themes/seccom/img/sponsor.png",
-              url: "http://eventick.com.br"
-            }*/
-        ],
-        
-        // List of Partners
-        partners: [
-            /*"BrazilJS": {
-              logo: "themes/seccom/img/partner.png",
-              url: "http://braziljs.org"
-            }*/
-        ],
+				// List of Sponsors
+				sponsors: [
+					{
+						name: "Chaordic",
+						logo: "themes/seccom/img/chaordic.png",
+						url: "http://chaordic.com.br"
+					},
+					{
+						name: "Dataprev",
+						logo: "themes/seccom/img/dataprev.png",
+						url: "http://dataprev.gov.br"
+					},
+					{
+						name: "Meritt",
+						logo: "themes/seccom/img/meritt.png",
+						url: "http://meritt.com.br"
+					}
+				],
+
+				// List of Partners
+				partners: [
+					{
+						name: "GDG Florianópolis",
+						logo: "themes/seccom/img/gdg.png",
+						url: "https://developers.google.com/groups/chapter/109245804055148797587/"
+					},
+					{
+						name: "Mozilla",
+						logo: "themes/seccom/img/mozilla.png",
+						url: "https://mozilla.org"
+					}
+				],
         
         // Theme path
         getTheme: function() {
