@@ -1,6 +1,4 @@
 <h2 class="section-title"><%= @labels['schedule'] %></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 <div class="schedule-tbl">
   <div class="schedule-header">
     <% for day, index in @schedule: %>
@@ -16,13 +14,14 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       <tbody class="day day-<%= index %> <% if index == 0: %>active<% end %>">
         <% for slot in day.talks: %>
           <% if slot.speaker: %>
-						<td class="schedule-time"><%= slot.time %></td>
-						<td class="schedule-slot">
-							
-							<%= slot.title %>
-							<span class="speakers-name"><%= slot.speaker %></span>
-						</td>
-						<td class="schedule-description"><%= slot.description %></td>
+						<tr>
+							<td class="schedule-time"><%= slot.time %></td>
+							<td class="schedule-slot">
+								<%= slot.title %>
+								<span class="speakers-name"><%= slot.speaker %></span>
+							</td>
+							<td class="schedule-description"><%= slot.description %></td>
+						</tr>
           <% else: %>
             <tr class="schedule-other">
               <td class="schedule-time"><%= slot.time %></td>
