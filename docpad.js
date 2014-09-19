@@ -68,7 +68,7 @@ module.exports = {
 					},
 					"Guilherme Berghauser": {
 						photo: "themes/seccom/img/berghauser.png",
-						bio: "Estudante de Sistema de Informação pela UTFPR – Pato Branco, voluntário da Mozilla (Mozillian), participa do projeto Firefox Student Ambassador,membro do grupo de usuários de Software Livre PatoLivre, Sócio-Fundador da QiLeverage empresa especializada no desenvolvimento de softwares educacionais, foi professor durante sete anos e nos últimos quatro anos se dedica ao desenvolvimento web e mobile.",
+						bio: "Estudante de Sistemas de Informação pela UTFPR, voluntário da Mozilla Foundation, participa do projeto Firefox Student Ambassador. Membro do grupo de usuários de software livre PatoLivre, e sócio-fundador da QiLeverage, empresa especializada no desenvolvimento de softwares educacionais. Foi professor durante sete anos e nos últimos quatro anos se dedica ao desenvolvimento web e mobile.",
 						company: "Mozilla"
 					},
 					"Júlia Laitano": {
@@ -78,7 +78,7 @@ module.exports = {
 					},
 					"Karina G. Roggia": {
 						photo: "themes/seccom/img/karina.png",
-						bio: "Possui Doutorado em Matemática pelo Instituto Superior Técnico em Lisboa, Portugal. É Bacharel e Mestre em Ciência da Computação pela Universidade Federal do Rio Grande do Sul. Foi membro do SQIG, vinculado ao Instituto de Telecomunicações em Portugal e atualmente é pesquisadora no i3G - Instituto de Governo Eletrônico, Inteligências e Sistemas. Tem experiência docente na graduação em Ciência da Computação tendo ministrado as disciplinas Teoria dos Grafos e Análise Combinatória, Linguagens Formais e Autômatos e Teoria das Categorias.",
+						bio: "Possui Doutorado em Matemática pelo Instituto Superior Técnico em Lisboa, Portugal. É Bacharel e Mestre em Ciência da Computação pela UFRGS. Foi membro do SQIG, vinculado ao Instituto de Telecomunicações em Portugal e atualmente é pesquisadora no I3G - Instituto de Governo Eletrônico, Inteligências e Sistemas. Tem experiência docente na graduação em Ciência da Computação tendo ministrado as disciplinas Teoria dos Grafos e Análise Combinatória, Linguagens Formais e Autômatos e Teoria das Categorias.",
 						company: "UFSC",
 						link: {
 							href: "http://lattes.cnpq.br/7786281602726587",
@@ -96,12 +96,12 @@ module.exports = {
 					},
 					"Márcio B. Castro": {
 						photo: "themes/seccom/img/marcio.png",
-						bio: "Professor do Departamento de Informática e Estatística da Universidade Federal de Santa Catarina. Doutor em Ciência da Computação pela Université de Grenoble (França). Bacharel e Mestre em Ciência da Computação pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS). Participa do Laboratório Internacional em Processamento de Alto Desempenho e Informática Ambiente (LICIA). Possui experiência na área de Ciência da Computação, com ênfase em Processamento Paralelo e Distribuído, atuando principalmente nos seguintes temas: modelos de programação paralela e distribuída, arquiteturas multicore e manycore, aplicações científicas paralelas, afinidade de dados e threads.",
+						bio: "Professor do Departamento de Informática e Estatística da UFSC. Doutor em Ciência da Computação pela Université de Grenoble (França). Bacharel e Mestre em Ciência da Computação pela PUC-RS. Participa do Laboratório Internacional em Processamento de Alto Desempenho e Informática Ambiente (LICIA). Possui experiência na área de Ciência da Computação, com ênfase em Processamento Paralelo e Distribuído, atuando principalmente com modelos de programação paralela e distribuída, arquiteturas multicore e manycore, aplicações científicas paralelas, afinidade de dados e threads.",
 						company: "UFSC"
 					},
 					"Marcelo Barbosa": {
 					photo: "themes/seccom/img/firemanxbr.png",
-						bio: "Evangelista open source, membro da equipe de Packager do Fedora onde atua também como Ambassador e Coordenador do L10N Brazilian Portuguese Team. Programador para soluções embedded focadas em linux e hardware ARM, atualmente envolvido com projetos de Virtualização com KVM e oVirt como também trabalhando com o buildsystem YOCTO na empresa Datacom. Sua última contribuição tem sido na portabilidade dos frameworks de visão computacional para o Fedora como também portando pacotes e bibliotecas Python para a distribuição.",
+						bio: "Evangelista opensource, membro da equipe de packagers do Fedora onde atua também como Ambassador e Coordenador do L10N Brazilian Portuguese Team. Programador para soluções embarcadas focadas em Linux e hardware ARM, atualmente envolvido com projetos de virtualização com KVM e oVirt e trabalhando com o build system Yocto na empresa Datacom. Sua última contribuição tem sido na portabilidade dos frameworks de visão computacional para o Fedora e pacotes e bibliotecas Python.",
 						company: "Fedora Ambassadors",
 						link: {
 							href: "http://www.firemanxbr.org/",
@@ -113,24 +113,29 @@ module.exports = {
 						bio: "?",
 						company: "UFSC"
 					},
-					"Michel Wilhelm": {
-						photo: "themes/seccom/img/speaker.jpg",
-						bio: "?",
-						company: "Mozilla"
+					"Michel L. de Ávila": {
+						photo: "themes/seccom/img/michel.png",
+						bio: "Possui graduação em Sistemas de Informação pela UFSC. Tem experiência na área de Ciência da Computação, com ênfase em Metodologia e Técnicas da Computação.",
+						company: "Neoway",
 					},
 					"Nassor P. da Silva": {
 						photo: "themes/seccom/img/speaker.jpg",
 						bio: "?",
 						company: "Google Developers Group - Floripa"
 					},
+					"Rafael Plentz": {
+						photo: "themes/seccom/img/speaker.jpg",
+						bio: "?",
+						company: "Dataprev"
+					},
 					"Sérgio Peters": {
 						photo: "themes/seccom/img/peters.png",
-						bio: "Possui graduação, mestrado e doutorado em Engenharia Mecânica pela Universidade Federal de Santa Catarina. Atualmente é professor do Departamento de Informática e Estatística e pesquisador na área de métodos numéricos para resolução das equações diferenciais parciais que modelam o escoamento de fluidos e a transferência de calor.",
+						bio: "Possui graduação, mestrado e doutorado em Engenharia Mecânica pela UFSC. Atualmente é professor do Departamento de Informática e Estatística e pesquisador na área de métodos numéricos para resolução das equações diferenciais parciais que modelam o escoamento de fluidos e a transferência de calor.",
 						company: "UFSC"
 					},
 					"Tarcísio E. M. Crocomo": {
 						photo: "themes/seccom/img/cara_do_tarcisio.png",
-						bio: "?",
+						bio: "Formado na UFSC em Ciências (sic) da Computação, atualmente trabalha com desenvolvimento em C++ e Python na Audaces. Participou do grupo PET Computação da UFSC de 2010 a 2013.",
 						company: "Audaces"
 					}
 				},
@@ -141,14 +146,14 @@ module.exports = {
                 date: "13",
                 name: "Segunda",
                 talks: [
-                    {
-                        title: "Desenvolvimento de aplicativos Firefox OS",
-                        description: "?",
+										{	
+                        title: "Neo4j, um banco de dados em grafos",
+												description: "Importância dos grafos na modelagem de informações fortemente conectadas e uso do banco Neo4j para tal, linguagem Cypher para navegação nos grafos, exemplos práticos de uso.",
                         time: "10h00",
-                        speaker: "Guilherme Berghauser",
+												speaker: "Michel L. de Ávila"
                     },
                     {
-                        name: "Almoço",
+                        name: "Intervalo",
                         time: "12h00"
                     },
                     {
@@ -156,8 +161,8 @@ module.exports = {
                         time: "13h30"
                     }, 
                     {
-                        title: "Como contribuir com o Projeto Fedora",
-                        description: "?",
+                        title: "Openshift Open Source Cloud",
+                        description: "Uso simples e fácil do OpenShift de forma gratuita na cloud da Red Hat. O desenvolvedor cria sua conta usa a plataforma e não preocupa-se com infra-estrutura, apenas com o seu código.",
                         time: "14h30",
                         speaker: "Marcelo Barbosa"
                     },
@@ -167,7 +172,7 @@ module.exports = {
                     },
                     {
                         title: "Ambient Assisted Living",
-                        description: "?",
+                        description: "Apresentação dos conceitos relativos de AAL, que permite maior eficiência na monitoração e maior liberdade para pessoas vivendo em ambientes assistidos. Uma fonte de crowdsourcing antes inimaginada.",
                         time: "16h00",
                         speaker: "Mário Dantas"
                     },
@@ -183,11 +188,13 @@ module.exports = {
                 name: "Terça",
                 talks: [
                     {
-                        name: "Em breve...",
-                        time: "13h30"
-                    }, 
+                        title: "Aplicativos para Firefox OS",
+                        description: "?",
+                        time: "10h00",
+                        speaker: "Guilherme Berghauser",
+                    },
                     {
-                        name: "Almoço",
+                        name: "Intervalo",
                         time: "12h00"
                     },
                     {
@@ -197,8 +204,8 @@ module.exports = {
                         speaker: "Nassor P. da Silva"
                     },
                     {
-                        title: "Fedora como solução para sistemas embarcados",
-                        description: "?",
+                        title: "Fedora em sistemas embarcados",
+                        description: "Suporte à arquitetura ARM no Fedora, vantagens, o futuro desta área, projetos interessantes e demonstração de algumas placas rodando o Fedora: Raspberry Pi B, BeagleBone Black, Cubietruck e mais, ",
                         time: "14h30",
                         speaker: "Marcelo Barbosa"
                     },
@@ -207,24 +214,29 @@ module.exports = {
                         time: "15h30"
                     },
                     {
-                        title: "O problema de pequenos desempenhos em grandes máquinas",
-                        description: "A palestra abordará os desafios na obtenção de alto desempenho com aplicações científicas em máquinas paralelas. Entre as questões a serem discutidas estão: como aplicações científicas funcionam; como plataformas paralelas de alto desempenho são organizadas; quais são as origens dos problemas de desempenho de comunicação e desbalanceamento de carga; e como podemos tratar destes problemas.",
-                        time: "16h00",
-                        speaker: "Laércio L. Pilla"
-                    }
+											name: "Em breve...",
+											time: "16h00"
+										},
+										{
+												title: "Go Lang",
+												description: "?",
+												time: "18:30",
+												speaker: "Nassor P. da Silva"
+										}
                 ]
             },
             {
                 date: "15",
                 name: "Quarta",
-                talks: [{
+                talks: [
+										{
                         title: "Python parte 1",
                         description: "?",
                         time: "16h00",
                         speaker: "Tarcísio E. M. Crocomo"
                     },
                     {
-                        name: "Almoço",
+                        name: "Intervalo",
                         time: "12h00"
                     },
                     {
@@ -233,25 +245,25 @@ module.exports = {
                         time: "13h30"
                     },
                     {
-                        title: "TV Digital Interativa",
+                        title: "?",
                         description: "?",
                         time: "14h30",
-                        speaker: "Aldo von Wangenheim"
+                        speaker: "Júlia Laitano"
                     },
                     {
                         name: "Coffee-break",
                         time: "15h30"
                     },
                     {
-                        title: "Mozilla Developmer Network",
-                        description: "?",
+                        title: "O problema de pequenos desempenhos em grandes máquinas",
+                        description: "Como aplicações científicas funcionam. plataformas paralelas de alto desempenho são organizadas, quais são as origens dos problemas de desempenho e como podemos tratar destes problemas.",
                         time: "16h00",
-                        speaker: "Michel Wilhelm"
+                        speaker: "Laércio L. Pilla"
                     },
                     {
-                        title: "Python parte 2",
+                        title: "Python parte 1",
                         description: "?",
-                        time: "18h00",
+                        time: "18h30",
                         speaker: "Tarcísio E. M. Crocomo"
                     }
                 ]
@@ -266,7 +278,7 @@ module.exports = {
                         time: "10h00"
                     },
                     {
-                        name: "Almoço",
+                        name: "Intervalo",
                         time: "12h00"
                     },
                     {
@@ -276,8 +288,8 @@ module.exports = {
                         speaker: "Antônio F. Loureiro"
                     },
                     {
-                        title: "Processadores Manycore...",
-                        description: "?",
+                        title: "Processadores manycore de baixo consumo",
+                        description: "A tendência atual é o crescimento da quantidade de cores, futuro da computação de alto desempenho, alternativa para aliar desempenho e baixo consumo usando processadores manycore, conceitos e motivos para uso.",
                         time: "14h30",
                         speaker: "Márcio B. Castro"
                     },
@@ -286,12 +298,16 @@ module.exports = {
                         time: "15h30"
                     },
                     {
-                        name: "Em breve...",
-                        time: "16h00"
+                        title: "Buscas jurídicas utilizando ontologias e multilinguismo",
+												description: "Apresentação do sistema Ontojuris associado ao projeto TECLIN, iniciativa para preservação e difusão de culturas minoritárias. Universal Network Language, possíveis aplicações e implementação com o sistema apresentado.",
+                        time: "16h00",
+												speaker: "Karina G. Roggia"
                     }, 
                     {
-                        name: "Em breve...",
-                        time: "18h00"
+                        title: "Python parte 2",
+                        description: "?",
+                        time: "18h30",
+                        speaker: "Tarcísio E. M. Crocomo"
                     },
                 ]
             },
@@ -303,29 +319,39 @@ module.exports = {
                         name: "Em breve...",
                         time: "10h00"
                     },
+										{
+                        title: "Neo4j, um banco de dados em grafos",
+												description: "Importância dos grafos na modelagem de informações fortemente conectadas e uso do banco Neo4j para tal, linguagem Cypher para navegação nos grafos, exemplos práticos de uso.",
+                        time: "10h00",
+												speaker: "Michel L. de Ávila"
+                    },
                     {
-                        name: "Almoço",
+                        name: "Intervalo",
                         time: "12h00"
                     },
                     {
-                        name: "Em breve...",
-                        time: "13h30"
+                        title: "Bases de dados de grande porte e seus desafios na Dataprev",
+                        time: "13h30",
+												speaker: "Rafael Plentz"
                     }, 
                     {
-                        name: "Em breve...",
-                        time: "14h30"
+                        title: "Processamento em larga escala com Spring Batch",
+                        time: "14h30",
+												speaker: "Rafael Plentz"
                     },
                     {
                         name: "Coffee-break",
                         time: "15h30"
                     },
                     {
-                        name: "Em breve...",
-                        time: "16h00"
+                        title: "Aplicação do cálculo numérico na computação",
+												description: "A computação está baseada em diversos princípios matemáticos: lógica, álgebra, cálculo, etc. O cálculo numérico permite a obtenção de soluções aproximadas de problemas sem soluções exatas conhecidas.",
+                        time: "16h00",
+												speaker: "Sérgio Peters"
                     }, 
                     {
                         name: "Em breve...",
-                        time: "18h00"
+                        time: "18h30"
                     },
                 ]
             }
