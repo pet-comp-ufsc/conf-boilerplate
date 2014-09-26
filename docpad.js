@@ -141,6 +141,11 @@ module.exports = {
 						photo: "themes/seccom/img/cara_do_tarcisio.png",
 						bio: "Formado na UFSC em Ciências (sic) da Computação, atualmente trabalha com desenvolvimento em C++ e Python na Audaces. Participou do grupo PET Computação da UFSC de 2010 a 2013.",
 						company: "Audaces"
+					},
+					"Tiago Furtado": {
+						photo: "themes/seccom/img/tiago.png",
+						bio: "Bacharel e mestre em Ciência da Computação, possui sólida formação teórica e mais de 10 anos de experiência prática com desenvolvimento de sistemas para diferentes ramos de atividade. Atualmente, é full­stack developer na Meritt, onde converte café em linhas de código PHP com 100% de cobertura de testes, seguindo os conceitos de DDD e REST.",
+						company: "Meritt"
 					}
 				},
 
@@ -209,7 +214,7 @@ module.exports = {
                     },
                     {
                         title: "Fedora em sistemas embarcados",
-                        description: "Suporte à arquitetura ARM no Fedora, vantagens, o futuro desta área, projetos interessantes e demonstração de algumas placas rodando o Fedora: Raspberry Pi B, BeagleBone Black, Cubietruck e mais, ",
+                        description: "Suporte à arquitetura ARM no Fedora, vantagens, o futuro desta área, projetos interessantes e demonstração de algumas placas rodando o Fedora: Raspberry Pi B, BeagleBone Black, Cubietruck e mais.",
                         time: "14h30",
                         speaker: "Marcelo Barbosa"
                     },
@@ -218,8 +223,10 @@ module.exports = {
                         time: "15h30"
                     },
                     {
-											name: "Em breve...",
-											time: "16h00"
+											title: "Testes de unidade na prática",
+											description: "Por que usá-los? Como são escritos? Como automatizá-los? Serão abordados aspectos conceituais de qualidade de código, cobertura de testes e TDD, com exemplos em aplicações desenvolvidas na Meritt.",
+											time: "16h00",
+											speaker: "Tiago Furtado"
 										},
 										{
 												title: "Go Lang",
