@@ -26,6 +26,68 @@
   <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css">
   <!-- / STYLES -->
 
+<!-- WORST DESIGN DECISIONS EVER WARNING -->
+<!--
+
+    NOTE: It wasn't designed to be a good code, actually it was a little "go
+          horse". Find a better way to do it and...do it.
+
+-->
+
+<style>
+
+.schedule-day {
+    width: 20%;
+    min-height: 2.5em;
+    border-radius: 5px;
+    text-align: center !important;
+    user-select: none;
+}
+
+.schedule-day:hover {
+    cursor: pointer;
+    background: rgba(255, 208, 32, .2);
+}
+
+.schedule-day
+
+</style>
+
+<script>
+
+function select_sched(col, i) {
+    if (typeof(selected_sched) != 'undefined') {
+        selected_sched.style.background = '';
+    }
+    selected_sched = col;
+    selected_sched.style.background = 'rgba(255, 128, 0, .2)';
+    for (var i_ in col.parentElement.children) {
+        sched_rows = document.getElementsByClassName('day'+i_+'sched_tbody');
+        Array.from(sched_rows).forEach(
+                function(row, index, array) {
+                    if (i == i_) {
+                        row.style.display = 'table-row';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                }
+            );
+        /*
+        for (var row of sched_rows) {
+            if (i == i_) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        }
+        */
+    }
+}
+
+</script>
+
+<!-- / WORST DESIGN DECISIONS EVER WARNING -->
+
 </head>
 <body>
 
@@ -70,6 +132,10 @@
       })();
   </script>
   <!-- /GOOGLE ANALYTICS -->
+
+  <script>
+select_sched(document.getElementsByClassName("schedule-day")[0], 0);
+  </script>
 
 </body>
 </html>

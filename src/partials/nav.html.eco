@@ -1,6 +1,7 @@
 <!-- NAVIGATION -->
 <nav id="nav">
   <ul class="wrapper">
+    <img src="themes/seccom/img/logo_seccom_lowpoly_lower.png" height="24" style="margin-top: -10px"/>
     <% for section in @sections : %>
       <li class="nav-item">
         <a href="#<%= section %>" target="_blank" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>

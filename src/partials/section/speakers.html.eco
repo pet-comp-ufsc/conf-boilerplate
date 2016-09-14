@@ -12,7 +12,7 @@
 
       <h3 class="speech-title">
         <% if speaker.presentation.time: %>
-          <span class="speech-time"><%= speaker.presentation.time %></span>
+          <span class="speech-time"><%= speaker.presentation.day %> - <%= speaker.presentation.time %></span>
         <% end %>
           <span> <%= speaker.presentation.title %></span>
       </h3>

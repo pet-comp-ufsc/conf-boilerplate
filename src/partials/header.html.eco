@@ -8,6 +8,7 @@
 <header class="header">
   <div class="wrapper">
     <h1 class="logo-name">
+      <img src="themes/seccom/img/logo_seccom_lowpoly_lower.png"/><br>
       <a class="logo-link" href="#" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>
     </h1>
     <h2 class="tagline"><%= @conf.date %>, <%= @conf.venue %>, <%= @conf.city %></h2>
