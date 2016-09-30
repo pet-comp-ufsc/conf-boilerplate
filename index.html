@@ -1,0 +1,2504 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Event">
+<head>
+
+  <title itemprop="name">SECCOM</title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="SECCOM">
+  <meta name="description" content="Semana Acadêmica da Computação e Sistemas">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- FACEBOOK -->
+  <meta property="fb:app_id" content="372862979453673">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/pet-comp-ufsc/conf-boilerplate">
+  <meta property="og:title" content="SECCOM">
+  <meta property="og:description" content="Semana Acadêmica da Computação e Sistemas">
+  <meta property="og:image" content="https://github.com/pet-comp-ufsc/conf-boilerplate/themes/seccom/img/badge.jpg">
+  <!-- / FACEBOOK -->
+
+  <link rel="shortcut icon" href="themes/seccom/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="themes/seccom/img/apple-touch-icon.png">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="themes/seccom/css/main.css">
+  <!-- / STYLES -->
+
+<!-- WORST DESIGN DECISIONS EVER WARNING -->
+<!--
+
+    NOTE: It wasn't designed to be a good code, actually it was a little "go
+          horse". Find a better way to do it and...do it.
+
+-->
+
+<style>
+
+.schedule-day {
+    width: 20%;
+    min-height: 2.5em;
+    border-radius: 5px;
+    text-align: center !important;
+    user-select: none;
+}
+
+.schedule-day:hover {
+    cursor: pointer;
+    background: rgba(255, 208, 32, .2);
+}
+
+.schedule-day
+
+</style>
+
+<script>
+
+function select_sched(col, i) {
+    if (typeof(selected_sched) != 'undefined') {
+        selected_sched.style.background = '';
+    }
+    selected_sched = col;
+    selected_sched.style.background = 'rgba(255, 128, 0, .2)';
+    for (var i_ in col.parentElement.children) {
+        sched_rows = document.getElementsByClassName('day'+i_+'sched_tbody');
+        Array.from(sched_rows).forEach(
+                function(row, index, array) {
+                    if (i == i_) {
+                        row.style.display = 'table-row';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                }
+            );
+        /*
+        for (var row of sched_rows) {
+            if (i == i_) {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        }
+        */
+    }
+}
+
+</script>
+
+<!-- / WORST DESIGN DECISIONS EVER WARNING -->
+
+</head>
+<body>
+
+  <div class="global">
+
+    <!-- NAVIGATION -->
+<nav id="nav">
+  <ul class="wrapper">
+    <img src="themes/seccom/img/logo_seccom_lowpoly_lower.png" height="24" style="margin-top: -10px"/>
+    
+      <li class="nav-item">
+        <a href="#about" target="_blank" title="Sobre" class="nav-link">Sobre</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#location" target="_blank" title="Local" class="nav-link">Local</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#minic_sub" target="_blank" title="Inscrição (Minicursos)" class="nav-link">Inscrição (Minicursos)</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#schedule" target="_blank" title="Cronograma" class="nav-link">Cronograma</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#speakers" target="_blank" title="Palestrantes" class="nav-link">Palestrantes</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#sponsors" target="_blank" title="Patrocínio" class="nav-link">Patrocínio</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#partners" target="_blank" title="Parcerias" class="nav-link">Parcerias</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#contact" target="_blank" title="Contato" class="nav-link">Contato</a>
+      </li>
+    
+  </ul>
+</nav>
+
+<hr>
+
+    
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrapper">
+    <h1 class="logo-name">
+      <img src="themes/seccom/img/logo_seccom_lowpoly_lower.png"/><br>
+      <a class="logo-link" href="#" title="SECCOM" itemprop="name">SECCOM</a>
+    </h1>
+    <h2 class="tagline">3 a 7 de outubro, Auditório EPS, Florianópolis</h2>
+
+    
+  </div>
+</header>
+<!--  / HEADER -->
+
+<hr>
+
+
+    <!-- CONTENT -->
+    <div class="content" id="content">
+      <div class="wrapper">
+        
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+    <h2 class="section-title">Sobre</h2>
+<p itemprop="description">
+    A SECCOM - Semana Acadêmica de Ciência da Computação e Sistemas de
+    Informação - é um evento realizado pelo PET Computação e CALICO (Centro
+    Acadêmico Livre da Computação). Nos dias 3 a 7 de outubro de 2016 será
+    realizada sua XIX edição.<br>
+    O objetivo da SECCOM é aprimorar, estender e explorar conhecimentos
+    relacionados à computação e áreas afins, oferecendo aos alunos e à
+    comunidade em geral palestras e minicursos sobre os mais variados temas de
+    pesquisa. Além disso, todos os anos diversas empresas são convidadas a
+    participar, o que promove a aproximação dos acadêmicos com o mercado de
+    trabalho.
+</p>
+
+  </section>
+
+  <!-- / ABOUT -->
+
+  <!-- LOCATION -->
+
+  <section class="location" id="location">
+    <h2 class="section-title">Local</h2>
+
+<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <span itemprop="streetAddress">Universidade Federal de Santa Catarina. </span>
+  <span itemprop="addressLocality">Florianópolis</span>,
+  <span itemprop="addressRegion"> Santa Catarina</span>
+</p>
+
+<div id="map-canvas" class="location-area" data-address="Universidade Federal de Santa Catarina, Florianópolis - Santa Catarina"></div>
+
+  </section>
+
+  <!-- / LOCATION -->
+
+  <!-- MINIC_SUB -->
+
+  <section class="minic_sub" id="minic_sub">
+    <h2 class="section-title">Inscrição (Minicursos)</h2>
+<p>O formulário de inscrição já está aberto.</p>
+<p style="font-size: 4em; text-align: center;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc9namNx8ib9UCajA16TZAMXxAMvebbxeH0CnxCXun00a4rmA/viewform">Inscreva-se!</a></p>
+
+  </section>
+
+  <!-- / MINIC_SUB -->
+
+  <!-- SCHEDULE -->
+
+  <section class="schedule" id="schedule">
+    <h2 class="section-title">Cronograma</h2>
+<p>O cronograma será atualizado conforme os horários forem sendo confirmados.</p>
+<div class="schedule-tbl">
+  <table>
+    <thead style="border-bottom: solid 2px gray; margin-bottom: 1.5em;" onselectstart="return false;">
+      <tr>
+        
+          <th class="schedule-day" onclick="select_sched(this, 0)">Segunda</th>
+        
+          <th class="schedule-day" onclick="select_sched(this, 1)">Terça</th>
+        
+          <th class="schedule-day" onclick="select_sched(this, 2)">Quarta</th>
+        
+          <th class="schedule-day" onclick="select_sched(this, 3)">Quinta</th>
+        
+          <th class="schedule-day" onclick="select_sched(this, 4)">Sexta</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th class="schedule-time">Horário</th>
+            <th class="schedule-slot">Bloco</th>
+            <th class="schedule-description">Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        
+          
+            
+              
+                <tr class="day0sched_tbody">
+                  <td class="schedule-time">10h10</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/logo-pet.png" alt="PET Computação">
+                    </span>
+                  
+                  
+                  <b>Minicurso:</b> Introdução ao Linux
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Minicurso introdutório de linux, comandos básicos para navegação e gerenciamento de arquivos, processos e permissões.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day0sched_tbody">
+                  <td class="schedule-time">13h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/josueRamos.jpg" alt="Josué Ramos">
+                    </span>
+                  
+                  
+                  Temos Empatia por Robôs? E a Área Interação Humano Robô com isso?
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Objetivo da palestra é apresentar a área de Interação Humano Robô e tratar dos aspectos relacionados ao desenvolvimento de Empatia, que a diferencia de outras áreas.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day0sched_tbody">
+                  <td class="schedule-time">14h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/JomiHubner.jpg" alt="Jomi Fred Hübner">
+                    </span>
+                  
+                  
+                  Programação Orientada a Agentes
+                  </td>
+                  <td class="schedule-description">
+                      
+                      A palestra apresenta, motiva e discute o paradigma de programação orientada a agentes. Agentes, nesse caso, são entidades de software que apresentam características que facilitam a resolução de vários problemas recentes, entre elas: autonomia, decentralização, concorrência, comportamento reativo e (ao mesmo tempo) orientado a objetivos. A partir de uma conceituação introdutória, a palestra irá ilustrar esse paradigma com a linguagem de programação Jason, procurando compará-las à outras linguagens.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day0sched_tbody" class="schedule-other">
+                <td class="schedule-time">15h30</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day0sched_tbody">
+                  <td class="schedule-time">16h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/vania_bogorny.gif" alt="Vania Bogorny">
+                    </span>
+                  
+                  
+                  Você sabia que seu smartphone pode revelar quem você é?
+                  </td>
+                  <td class="schedule-description">
+                      
+                      No passado, as informações sobre os hábitos das pessoas eram obtidos através de surveys e entrevistas, como o Censo do IBGE. Hoje, em virtude da tecnologia móvel, as rotinas diárias reais das pessoas estão sendo registradas e analisadas constantemente. Estamos vivendo a era do movimento. Grandes volumes de dados da nossa rotina diária estão sendo coletados das mais diversas fontes. Ao utilizarmos um smartphone, a Google ou a Apple registram detalhadamente o caminho que percorremos, os lugares que visitamos, e o tempo que permanecemos nestes lugares. O Facebook, por exemplo, armazena os lugares onde estamos, com quem nos relacionamos, o que gostamos e o que pensamos. Pelo Twitter, registramos onde estamos e o que pensamos. Ainda, nas imagens das câmeras de segurança espalhadas pelo campus da UFSC, pela cidade, por edifícios comerciais, fica registrado o nosso movimento e nosso comportamento. São tantas as fontes de coleta de dados do nosso movimento cotidiano que a ciência está desenvolvendo diversos métodos para análise e mineração destes dados. Esta palestra tem como objetivo mostrar uma breve comparação dos diferentes tipos de dados de movimento e apresentar alguns trabalhos que vem sendo desenvolvidos na UFSC em parceria com Universidades da Itália e da Grécia como, por exemplo, classificação do perfil/comportamento de motoristas no trânsito, descoberta de indivíduos com comportamentos anormais em áreas de grande fluxo de pessoas, perfil social dos indivíduos, bem como a inferência de relacionamentos entre indivíduos com base nos seus padrões de encontro com outros indivíduos.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day0sched_tbody">
+                  <td class="schedule-time">17h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/andrecarlucci_way2.png" alt="André Carlucci">
+                    </span>
+                  
+                  
+                  Armazenando séries temporais em bases de dados alternativas
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Uma série temporal (time series) é uma coleção de observações feitas sequencialmente ao longo do tempo. Se você está no mercado de IoT, esse tipo de dado será o que você vai armazenar cada vez que ler um sensor: data e valor.<br>Por 10 anos, temos armazenado na Way2, bilhões de medições periódicas, em bancos de dados relacionais. Mas projetos cada vez maiores nos forçaram a repensar como trabalhar melhor com tantos dados desta natureza.<br>Nesta palestra, vamos analisar as opções de armazenamento deste tipo de dados e compartilhar nossa evolução em busca de sistemas rápidos e eficientes. Começaremos por maneiras criativas de se usar um banco de dados relacional, depois passaremos por modelos NoSQL, TimeSeriesDatabases e até mesmo como criar uma própria base de dados específica orientada a colunas.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day0sched_tbody" class="schedule-other">
+                <td class="schedule-time">18h00</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day0sched_tbody">
+                  <td class="schedule-time">18h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/Alex-Pinto1.jpg" alt="Alex Sandro Roschildt Pinto">
+                    </span>
+                  
+                  
+                  Fusão de Dados Para Internet das Coisas (IoT)
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Ambientes de Internet das Coisas (IoT) usualmente geram uma grande massa de dados. Se em ambientes restritos, como em uma Rede de Sensores sem Fio, o volume de dados já é uma preocupação, em ambientes integrados com a Internet, como o conceito de IoT, essa preocupação é ainda maior. Atualmente as estimativas são que 9 bilhões de dispositivos estejam conectados a Internet e que este numero possa chegar entre 24 bilhões e 50 bilhões em 2020. O volume de dados que estes dispositivos podem gerar tanto no processo de armazenamento e processamento como no processo de transmissão são incalculáveis, pois teremos desde dados binários até dados multimídia. O consumo de energia envolvido nos dias atuais com todo o tráfego de dados na Internet no mundo é em torno de 5% de toda a energia produzida. Logo, processos de agregação e fusão de dados em sensores podem ajudar a diminuir e controlar estes dados em ambientes IoT. Nesta Palestra serão apresentados os principais desafios e oportunidades em Fusão de Dados para Internet das Coisas.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+                
+              
+                
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+        
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+                <tr class="day1sched_tbody">
+                  <td class="schedule-time">13h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/elder_santos.jpg" alt="Elder Santos">
+                    </span>
+                  
+                  
+                  Criatividade Computacional
+                  </td>
+                  <td class="schedule-description">
+                      
+                      A palestra visa apresentar um panorama da área de criatividade computacional com ênfase nas suas aplicações mais notáveis, seus principais modelos e formas para integrar criatividade e inteligência computacional para resolver ou lidar com problemas de difícil modelagem.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day1sched_tbody">
+                  <td class="schedule-time">14h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/Fileto2016.jpg" alt="Renato Fileto">
+                    </span>
+                  
+                  
+                  Anotação semântica de dados na Web
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Anotações semânticas associam (trechos de) objetos digitais (tais como passagens de livros, segmentos de imagens, trechos de vídeos ou séries temporais) a recursos de bases de conhecimento com semântica bem definida (tais como objetos, conceitos ou simplesmente palavras com certo significado). Esta palestra fornece uma visão geral dos principais conceitos e técnicas relacionados com anotação semântica de textos não estruturados e de dados espaciais e temporais (conteúdos de bibliotecas digitais, trajetórias de objetos móveis e postagens em mídias sociais), com ênfase em anotações apontando para recursos de ontologias, coleções de dados ligados (DBPedia, LinkedGeoData, etc.) e bases léxicas (WordNet, VerbNet, etc.). A palestra revisa alguns métodos e ferramentas para anotação semântica automática, desafios atuais e conclui com projetos do grupo de pesquisa em bancos de dados do INE/UFSC.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day1sched_tbody" class="schedule-other">
+                <td class="schedule-time">15h30</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day1sched_tbody">
+                  <td class="schedule-time">16h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/melissa.jpg" alt="Melissa Weber Mendonça">
+                    </span>
+                  
+                  
+                  Software Livre: Passado, Presente e Futuro
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Nesta palestra, apresento um breve histórico do movimento Software Livre, suas motivações e líderes. Discutiremos a diferença entre software livre e software de código aberto, apresentaremos casos de sucesso da adoção de software livre no mercado e na ciência. Por fim, faremos uma discussão de um possível futuro para o que se entende pelas 4 liverdades.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day1sched_tbody">
+                  <td class="schedule-time">17h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/foto-dexter.jpg" alt="André Dexter Bereza">
+                    </span>
+                  
+                  
+                  Desenvolvimento Nacional de Hardware Criptográfico
+                  </td>
+                  <td class="schedule-description">
+                      
+                      O desenvolvimento de hardware de propósito geral é uma tarefa complexa por si só, quando adicionamos as proteções físicas necessárias em um hardware criptográfico, a complexidade é ainda maior. Essa apresentação apresenta as proteções existentes em um hardware criptográfico: evidenciação de abertura variação de tensão, variação de temperatura, sondagem, emissão eletromagnética e outras. A apresentação também demonstra quais os desafios de se desenvolver hardware criptográfico no Brasil.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day1sched_tbody" class="schedule-other">
+                <td class="schedule-time">18h00</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day1sched_tbody">
+                  <td class="schedule-time">18h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/gilberto_toptal.jpg" alt="Gilberto Garcia Jr">
+                    </span>
+                  
+                  
+                  Trabalho Remoto
+                  </td>
+                  <td class="schedule-description">
+                      
+                      A Toptal é uma empresa do Vale do Silício e que conta com desenvolvedores e designers espalhados no mundo todo. Sendo uma empresa 100% remota, acreditamos que é fundamental a nossa participação nas comunidades locais. Realizamos eventos mensalmente em Florianópolis e é a nossa primeira participação dentro da UFSC. Queremos trazer para o público da XIX SECCOM como é trabalhar remotamente atendendo ao mercado estrangeiro passando nossa visão e experiência sobre isto, quais os desafios e vantagens desta forma de trabalho.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                
+                  <tr class="day1sched_tbody">
+                    <td class="schedule-time">18h30</td>
+                    <td class="schedule-slot">
+                    
+                      <span class="speaker-photo">
+                        <img class="photo" src="themes/seccom/img/cara_do_tarcisio.jpg" alt="Tarcísio Eduardo Moreira Crocomo">
+                      </span>
+                    
+                    <b>Minicurso:</b> Python
+                    </td>
+                    <td class="schedule-description">
+                        
+                        
+                        
+                          <br><br>
+                          <b>Pré-Requisitos:</b> Familiaridade com Terminal
+                        
+                    </td>
+                  </tr>
+                
+              
+                
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+        
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+                
+              
+                
+                  <tr class="day2sched_tbody">
+                    <td class="schedule-time">10h10</td>
+                    <td class="schedule-slot">
+                    
+                      <span class="speaker-photo">
+                        <img class="photo" src="themes/seccom/img/cara_do_tarcisio.jpg" alt="Tarcísio Eduardo Moreira Crocomo">
+                      </span>
+                    
+                    <b>Minicurso:</b> Python
+                    </td>
+                    <td class="schedule-description">
+                        
+                        
+                        
+                          <br><br>
+                          <b>Pré-Requisitos:</b> Familiaridade com Terminal
+                        
+                    </td>
+                  </tr>
+                
+              
+            
+          
+            
+              
+                <tr class="day2sched_tbody">
+                  <td class="schedule-time">13h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/fernando_siqueira.jpg" alt="Msc. Fernando de Lucca Siqueira">
+                    </span>
+                  
+                  
+                  Uma abordagem fuzzy para o problema de recarga autônoma de robôs móveis
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Um robô móvel autônomo deve ser o mais independente possível de uma intervenção humana. Grande parte fos trabalhos atuais se focam em modelar o comportamento do robô ignorando um fator importante: a gerência de energia. Um robô necessita monitorar sua energia enquanto executa tarefas diversas. Caso decida que precise recarregar, é necessário abortar a tarefa atual, desperdiçando o trabalho não cumprido. Para minimizar o desperdício de tempo e energia, é necessário decidir o momento mais oportuno para recarregar. Essa palestra explora o problema de recarga autônoma de robôs móveis, apresentando algumas abordagens da literatura e uma nova proposta de gerência de energia utilizando lógica fuzzy.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day2sched_tbody">
+                  <td class="schedule-time">14h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/pedro_penna.jpg" alt="Pedro H. Penna">
+                    </span>
+                  
+                  
+                  O Sistema Operacional Nanvix
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Sistemas operacionais possuem um papel importante nos sistemas computacionais modernos. Eles estendem a funcionalidade do hardware e apresentam ao usuário uma máquina virtual que é mais fácil e amigável de ser programada. Sem sistemas operacionais, programadores teriam de se preocupar com as minúcias da máquina e gastar seu tempo implementando simples funcionalidades poderosas, atrasando assim o processo de desenvolvimento e aumentando o custo do software. Tendo em vista essa importância, o domínio do projeto e concepção de sistemas operacionais é certamente uma expertise valorizada. Nesse contexto, esse trabalho apresenta o Nanvix, um novo sistema operacional projetado para entusiastas que desejam masterizar esse assunto. Em contraste com os demais sistemas operacionais, o Nanvix é pequeno, moderno, possui uma arquitetura realística e apresenta uma documentação rica, entregando assim um ambiente propício para que entusiastas se preparem para hackear kernels de sistemas maiores no futuro.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day2sched_tbody" class="schedule-other">
+                <td class="schedule-time">15h30</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day2sched_tbody">
+                  <td class="schedule-time">16h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/julia_anitas.jpg" alt="Júlia Machado">
+                    </span>
+                  
+                  
+                  Você já se desafiou hoje?
+                  </td>
+                  <td class="schedule-description">
+                      
+                      O quanto você sair da sua zona de conforto pode te levar além do imaginável!
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day2sched_tbody">
+                  <td class="schedule-time">17h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/rafaelWeingartner.png" alt="Rafael Weingärtner">
+                    </span>
+                  
+                  
+                  Utilização de agentes autônomos para o gerenciamento de ambientes de computação em nuvem
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Nos últimos anos, o uso de computação em nuvem (CN) tem aumentado. Para atender o aumento da demanda, a infraestrutura necessária para criar e manter ambientes de CN cresce constantemente, o que impacta nos custos de gestão. Além disso, o processo de otimização desses ambientes é inviável de ser realizado por administradores, exigindo uma abordagem autônoma. Com o intuito de fornecer uma plataforma para gerenciar os ambientes de computação em nuvem foi criado o projeto Autonomiccs. O projeto fornece uma arquitetura para criar heurísticas utilizadas por agentes para selecionar servidores físicos para serem ativados ou desativados, mapear e realizar migrações de máquinas virtuais. Além disso, a plataforma Autonomiccs é capaz de distribuir o processamento e execução de ações de maneira transparente, utilizando a tecnologia de sistemas multiagente. A palestra aborda a criação da plataforma Autonomiccs, sua arquitetura e limitações e seus pontos de extensão.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day2sched_tbody" class="schedule-other">
+                <td class="schedule-time">18h00</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day2sched_tbody">
+                  <td class="schedule-time">18h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/rodrigo_supero.jpg" alt="Rodrigo Oliveira">
+                    </span>
+                  
+                  
+                  Inovação Oracle Cloud
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Nesta apresentação vou compartilhar experiências e contar um pouco do mundo de Cloud Computing para os alunos da UFSC e mostrar as tendências de TI para os futuros profissionais dessa área.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+        
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+                
+              
+                
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+                <tr class="day3sched_tbody">
+                  <td class="schedule-time">10h10</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/ranieri_salt.jpg" alt="Ranieri Althoff">
+                    </span>
+                  
+                  
+                  <b>Minicurso</b>: Javascript
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Construindo do zero uma sistema com uma API REST, armazenamento em banco de dados e suporte a multiplos usuários com o mais moderno que o Javascript oferece.
+                      
+                        <br><br>
+                        <b>Pré-Requisitos:</b> Básico de programação (até funções)
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day3sched_tbody">
+                  <td class="schedule-time">13h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/dantas.png" alt="Mário Dantas">
+                    </span>
+                  
+                  
+                  Fog Computing: Um novo paradigma computacional?
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Nesta palestra vamos abordar os desafios relativos ao processamento paralelo e distribuído, armazenamento e big data sob um prisma, de uma nova de abordagem de alto desempenho local, denominada de fog computing. A ideia é apresentar o diferencial da abordagem de fog computing com relação a outros paradigmas como cluster e cloud computing.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day3sched_tbody">
+                  <td class="schedule-time">14h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/nadjia.jpg" alt="Nadjia Jandt Feller">
+                    </span>
+                  
+                  
+                  Teste de software: um dia você precisará dele
+                  </td>
+                  <td class="schedule-description">
+                      
+                      A palestra tem por objetivo apresentar o (nem sempre tão) maravilhoso mundo do Teste de Software, tratando dos principais conceitos envolvidos, contextos de aplicação e técnicas para criação e execução de testes em sistemas.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day3sched_tbody" class="schedule-other">
+                <td class="schedule-time">15h30</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day3sched_tbody">
+                  <td class="schedule-time">16h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/marco_pixel.jpg" alt="Marco Burgin">
+                    </span>
+                  
+                  
+                  Introdução a Lean Startup
+                  </td>
+                  <td class="schedule-description">
+                      
+                      - O que é Lean Startup?<br>- Sobre Eric Reis (Criador e Autor);<br>- Como surgiu;<br>- O que é o famoso MVP;<br>- Como você pode aplicar o processo Lean na sua Startup.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day3sched_tbody">
+                  <td class="schedule-time">17h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/sem_foto.jpg" alt="Prof. Dr. Giovani Gracioli">
+                    </span>
+                  
+                  
+                  Utilizando a Unidade de Monitoramento de Desempenho em Sistemas de Tempo Real Multiprocessados
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Arquiteturas multicore vêm se consolidando no mercado como um compromisso viável entre a microeletrônica a que hoje temos acesso e o desempenho que almejamos para nossas plataformas computacionais. A exploração sistemática do paralelismo de tais plataformas, tanto a nível de linguagem de programação, quanto a nível de sistema operacional, vem se mostrando efetiva quando o objetivo é uma computação de alto desempenho. Entretanto, os mecanismos de ocultação de latência presentes em tais arquiteturas, como predição de desvios, execução especulativa fora de ordem e caches, embora fundamentais para seu bom desempenho, implicam em uma plataforma com variabilidade por demais acentuada para a maioria das aplicações embarcadas. Neste contexto, o sistema operacional se apresenta como um mediador com potencial para exportar às aplicações o desempenho da plataforma ao mesmo tempo em que esconde muitos de seus não-determinismos. Nesta apresentação, mostraremos como a Unidade de Monitoramento de Desempenho (PMU) em multiprocessadores atuais pode ser utilizada para aumentar a previsibilidade e, consequentemente, a escalonabilidade de tarefas de tempo real.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day3sched_tbody" class="schedule-other">
+                <td class="schedule-time">18h00</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day3sched_tbody">
+                  <td class="schedule-time">18h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/jean_hauck.png" alt="Jean Carlo Rossa Hauck">
+                    </span>
+                  
+                  
+                  Use-Case 2.0 - Incorporando práticas ágeis aos Use-Cases
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Desde que foi inicialmente proposta, em 1987, tendo sua notação posteriormente incorporada à UML, a técnica de Casos de Uso vem sendo aplicada com muito sucesso para coleta e análise de requisitos. Entretanto, com o passar dos anos, o crescimento das abordagens ágeis desafiou a adaptação dos Casos de Uso às demandas dos novos tempos da Engenharia de Software. Como resposta a essas demandas, Use-Case 2.0 incorpora princípios e práticas de gerenciamento e modelagem ágeis aos conceitos já comprovados de Casos de Uso. Nesta palestra serão apresentados: A motivação para o Use-Case 2.0; O histórico dos casos de uso; Os seis princípios; O conceito de Use-Case Slices, e; Como utilizar esses conceitos em um ambiente de desenvolvimento de software ágil
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day3sched_tbody">
+                  <td class="schedule-time">18h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/lahana_js4girls.jpg" alt="Lahana da Silva Lameira">
+                    </span>
+                  
+                  
+                    <span class="speaker-photo">
+                    
+                      <img class="photo" src="themes/seccom/img/michelle_js4girls.jpg" alt="Michelle Frasson"><br>
+                    
+                    </span>
+                  
+                  <b>Minicurso</b>: Acessibilidade na Web
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Vamos ver como é na prática a vida de quem depende totalmente da acessibilidade para poder navegar na web e como fazer essas adaptações em nosso site para tornar o acesso de todos possível.
+                      
+                        <br><br>
+                        <b>Pré-Requisitos:</b> Saber o básico de HTML, mas mesmo se não souber vai conseguir entender como a acessibilidade funciona e as dificuldades por determinados tipos de usuários quando se trata de acessibilidade. <b>É necessário levar fone de ouvido.</b>
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+        
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+                
+              
+                
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <tr class="day4sched_tbody">
+                  <td class="schedule-time">10h10</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/marcos_pixel.jpg" alt="Marcos Schead">
+                    </span>
+                  
+                  
+                  <b>Minicurso:</b> Git
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Será abordado tanto as funcionalidades de gerenciamento local com git e sua integração com um serviço de web hosting, para o gerenciamento remoto: o github. Todavia, o objetivo principal do minicurso é entender o que acontece por de trás de cada comando. Assim, muitos desastres e situações indesejadas poderão ser evitadas.
+                      
+                        <br><br>
+                        <b>Pré-Requisitos:</b> Saber utilizar o terminal do linux
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day4sched_tbody">
+                  <td class="schedule-time">13h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/celio_bridge.png" alt="Célio Cunha (A Confirmar)">
+                    </span>
+                  
+                  
+                  Estratégia e-Saúde no Brasil
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Cenário atual no Brasil, e-SUS Atenção Básica, SISMOB, desafios.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day4sched_tbody">
+                  <td class="schedule-time">14h30</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/leonardo_sacht_color.jpg" alt="Leonardo Koller Sacht">
+                    </span>
+                  
+                  
+                  Jaulas Aninhadas
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Muitas tarefas em processamento de geometria e simulação física se beneficiam de hierarquias em multirresolução. Uma importante característica para uma variedade de aplicações é que as malhas mais grosseiras enjaulem estritamente as mais finas, aninhando umas às outras. Técnicas existentes como decimação de malhas de superfícies ou extração de contornos de conjuntos de nível não provêm controle suficiente sobre as superfícies resultantes e não garantem aninhamento. Nós propomos uma solução que permite o uso de decimações e métricas de qualidade que dependem da aplicação. O método constroi a próxima malha mais grosseira da hierarquia usando uma sequência de decimação, fluxo geométrico e otimização que respeita colisões. Da mais grosseira para a mais fina, cada malha resultante completamente enjaula a próxima. O método é aplicável a uma variedade de superfícies com geometria e topologia complexas. Demonstramos a efetividade de nossas jaulas aninhadas para as seguintes aplicações: resolvedores em multigrid, detecção conservativa de colisões, discretização de domínios para simulação elástica e modelagem geométrica baseada em jaulas.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              <tr class="day4sched_tbody" class="schedule-other">
+                <td class="schedule-time">15h30</td>
+                <td class="schedule-slot">Coffee-break</td>
+                <td class="schedule-description">-</td>
+              </tr>
+            
+          
+            
+              
+                <tr class="day4sched_tbody">
+                  <td class="schedule-time">16h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/luiz_safeweb.png" alt="Luiz Carlos Zancanella">
+                    </span>
+                  
+                  
+                  Segurança da Informação nas Empresas
+                  </td>
+                  <td class="schedule-description">
+                      
+                      - Dimensões da Segurança da Informação;<br>- Papel dos profissionais de TI na Segurança da Informação;<br>- Importância e perspectivas da Segurança da Informação.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+            
+              
+                <tr class="day4sched_tbody">
+                  <td class="schedule-time">17h00</td>
+                  <td class="schedule-slot">
+                  
+                    <span class="speaker-photo">
+                      <img class="photo" src="themes/seccom/img/gustavo_blueticket.jpg" alt="Gustavo Zomer">
+                    </span>
+                  
+                  
+                  Porquê você não deve iniciar sua Startup com Micro Services?
+                  </td>
+                  <td class="schedule-description">
+                      
+                      Um dos temas mais discutidos atualmente é a construção de novas aplicações utilizando a arquitetura de Micro Services. Os benefícios são muitos: separação de regras de negócio em cada contexto, resiliência e flexibilidade, alta escalabilidade, facilidade de realizar deploy, flexibilidade de escolha de tecnologias e por aí vai. O problema é que muitas startups estão começando seus projetos e construindo uma arquitetura em micro-services, esquecendo um ponto fundamental: seu maior problema é construir uma aplicação que os seus usuários irão ter interesse de usar. O objetivo desta palestra é destacar os pontos positivos e negativos dessa nova arquitetura e mostrar que você não deve começar um novo projeto com micro services, mesmo que você saiba que sua aplicação irá ficar grande o bastante para valer a pena.
+                      
+                  </td>
+                </tr>
+              
+            
+          
+        
+
+      </tbody>
+    </table>
+</div>
+
+  </section>
+
+  <!-- / SCHEDULE -->
+
+  <!-- SPEAKERS -->
+
+  <section class="speakers" id="speakers">
+    <h2 class="section-title">Palestrantes</h2>
+
+<ul class="speakers-list">
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/logo-pet.png" alt="PET Computação" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Segunda - 10h10</span>
+          <span> <b>Minicurso:</b> Introdução ao Linux</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        PET Computação <a href="http://pet.inf.ufsc.br" target="_blank" title="Página oficial">Página oficial</a>
+        <span class="speakers-company">[UFSC]</span>
+      </h3>
+                    
+      <p class="speakers-bio">O PET – Programa de Educação Tutorial – é um dos programas apoiados pela SESu/MEC – Secretaria de Educação Superior do Ministério da Educação – e é destinado a grupos de alunos que demonstrem potencial, interesse, e habilidades destacadas em cursos de graduação. É formado por grupos tutoriais de aprendizagem, e busca propiciar aos bolsistas participantes, sob a orientação de um professor tutor e atuação coletiva, condições para a realização de atividades extracurriculares que favoreçam sua formação acadêmica global, contribuindo tanto para a integração no mercado profissional como também para o envolvimento no desenvolvimento de estudos em programas de Pós-Graduação. Outro grande objetivo do PET é a contribuição para a melhoria do ensino de graduação.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/josueRamos.jpg" alt="Josué Ramos" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Segunda - 13h30</span>
+          <span> Temos Empatia por Robôs? E a Área Interação Humano Robô com isso?</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Josué Ramos <a href="https://sites.google.com/site/josuejgramos/" target="_blank" title="Página pessoal">Página pessoal</a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Formação Academica: Graduação Eng Eletrica UFSC-1979; Mestrado em Robótica Unicamp 1986; Doutorado - Dirigiveis Robóticos UFSC 2002, com estágio sanduíche na Carnegie Mellon University (CMU); Pós Doutorados: 2004 - Veiculos Robóticos (CMU) e 2013 -Interação Humano Robô (CMU). Area de atuação: Desde 1983 é pesquisador ná área de robótica no CTI (Centro Tecnologia  da Informação Renato Archer) do Ministério da Ciência e Tecnologia e Inovação. Atua em robôs manipuladores, veículos aéreos não tripulados, veículos robóticos terrestres, robótica pedagógica de baixo custo, e interação humano robô. Participou do Projeto AURORA (dirigivel robótico)  que realizou um dos primeiros ôos de VANT no Brasil em 2000. Atualmente é Tecnologista Senior do CTI Renato Archer, pesquisador principal do projeto Fapesp Informações Não Verbais aplicado a um Robô Recepcionista, iniciado em 2014, que objetiva o desenvolvimento de atividades na área de Interação Humano Robô.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/JomiHubner.jpg" alt="Jomi Fred Hübner" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Segunda - 14h30</span>
+          <span> Programação Orientada a Agentes</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Jomi Fred Hübner <a href="http://jomi.das.ufsc.br" target="_blank" title="Página pessoal">Página pessoal</a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Jomi F. Hübner é professor no departamento de Automação e Sistemas da Universidade Federal de Santa Catarina. Seu principal tema de pesquisa é a programação de Sistemas Multi-Agentes (SMA). Os principais projetos de pesquisa em que participa são: Jason (um interpretador para um linguagem de programação de agentes baseada no modelo Belief-Desire-Intention), Moise (um modelo e infraestrutura para organização de SMA) e JaCaMo (uma plataforma multidimensional para programação de SMA). Participou da organização de vários eventos (ProMAS@AAMAS 2012, WESAAC 2012, IEEE/WIC/ACM WI-IAT'11, LADS 2010@MALLOW 2010 , COIN 2008@AAMAS 08, Iberagents@IBERAMIA 2006) e comitês de programa (AAMAS, EUMAS, ProMAS, COIN, AT2AI, LADS, SBIA, RFIA, APLSA, SEAS) nas suas áreas de competência.</p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/vania_bogorny.gif" alt="Vania Bogorny" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Segunda - 16h00</span>
+          <span> Você sabia que seu smartphone pode revelar quem você é?</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Vania Bogorny <a href="www.inf.ufsc.br/~vania" target="_blank" title="Página pessoal">Página pessoal</a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Vania Bogorny é professora do Departamento de Informática e Estatística da Universidade Federal de Santa Catarina desde Julho de 2009, e possui Bolsa de Produtividade em Pesquisa do CNPQ desde 2008. Possui doutorado (2006) e mestrado (2001) em Ciência da Computação pela Universidade Federal do Rio Grande do Sul e graduação (1995) em Ciência da Computação pela Universidade de Passo Fundo, tendo recebido da Sociedade Brasileira de Computação o prêmio de melhor tese de doutorado em Computação no Brasil no ano de 2007. Em 2014 realizou pós-doutorado no INRIA Sophia Antipolis, França; em 2008 realizou pós-doutorado no II/UFRGS e em 2007 realizou pós-doutorado na Universidade de Hasselt, Bélgica, no contexto do projeto europeu GeoPKDD, financiado pela União Européia. Em 2012 editou um livro sobre seu tema de pesquisa atual (Introdução a Trajetórias de Objetos Móveis). Em 2010 ministrou tutorial no tema de sua pesquisa em Mineração de Dados Espaciais no segundo maior congresso internacional na área de mineração de dados (IEEE ICDM). Desde 2009 tem projetos de Cooperação Internacional financiados pelo CNPq e União Européia. Nestes projetos estabeleceu parcerias de pesquisa com o CNR de Pisa/Itália, Universidade Ca’Foscari de Veneza/Itália e Universidade de Piraeus/Grécia.  </p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/andrecarlucci_way2.png" alt="André Carlucci" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Segunda - 17h00</span>
+          <span> Armazenando séries temporais em bases de dados alternativas</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        André Carlucci <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Way2]</span>
+      </h3>
+                    
+      <p class="speakers-bio">André Carlucci é co-fundador da Way2 Tecnologia, Microsoft Most Valuable Professional, Intel Innovator, Intel Black Belt Software Developer e organizador do DotNetFloripa. Tem 15 anos de experiência trabalhando em grandes projetos de TI no Brasil e na Europa. Atualmente está focado em arquitetura de software, desenvolvimento ágil, IoT e projetos open-source.</p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/Alex-Pinto1.jpg" alt="Alex Sandro Roschildt Pinto" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Segunda - 18h30</span>
+          <span> Fusão de Dados Para Internet das Coisas (IoT)</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Alex Sandro Roschildt Pinto <a href="" target="_blank" title=""></a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Alex Sandro Roschildt Pinto é bacharel em Ciências da Computação (UFPel), Mestre em Ciências da Computação (UFSC) e Doutor em Engenharia Elétrica (UFSC). Realizou Pós-Doutorado no ICMC-USP. Atualmente é professor do curso de Engenharia de Controle e Automação da UFSC Blumenau. Já publicou mais de 50 papers (artigos em periódicos, capítulos de livro e artigos em eventos) e recebeu 3 prêmios IEEE.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/elder_santos.jpg" alt="Elder Santos" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Terça - 13h30</span>
+          <span> Criatividade Computacional</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Elder Santos <a href="" target="_blank" title=""></a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Possui graduação em Bacharelado em Ciência da Computação pela Universidade de Caxias do Sul (2003), mestrado em Computação pela Universidade Federal do Rio Grande do Sul (2006) e doutorado em Computação pela Universidade Federal do Rio Grande do Sul (2010). Atualmente é professor adjunto da Universidade Federal de Santa Catarina. Tem experiência na área de Ciência da Computação, com ênfase em Inteligência Artificial, atuando principalmente nos seguintes temas: agentes, sistemas multi-agentes, ontologias e informática na educação.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/Fileto2016.jpg" alt="Renato Fileto" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Terça - 14h30</span>
+          <span> Anotação semântica de dados na Web</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Renato Fileto <a href="" target="_blank" title=""></a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">O professor Renato Fileto tem doutorado em Computação pelo IC/Unicamp, com estágio sanduíche no Georgia Tech (EUA), e pós-doutorado pelo ICMC/USP. Tem experiência em empresas e instituições de pesquisa e ensino superior, com mais de 60 artigos publicados e algumas contribuições para inovação na indústria. Sua área de pesquisa é bancos de dados, com foco em semântica para catalogação, recuperação, integração e análise de dados. Seus temas de pesquisa atualmente incluem anotações semânticas, contextos, sistemas baseados em conhecimento e extensões espaço-temporais e semânticas para data warehouses.</p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/melissa.jpg" alt="Melissa Weber Mendonça" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Terça - 16h00</span>
+          <span> Software Livre: Passado, Presente e Futuro</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Melissa Weber Mendonça <a href="http://lattes.cnpq.br/1275732441716682" target="_blank" title="Lattes">Lattes</a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Sou matemática de formação, com doutorado em Otimização e Análise Numérica, e uso programação no meu trabalho diariamente. Trabalho com diversas linguagens, entre elas Fortran, MATLAB, Python e C, com muito bash e LaTeX envolvido. Usuária de Linux desde 1998, de KDE desde 1999 e evangelista de Software Livre desde os primórdios da Internet.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/foto-dexter.jpg" alt="André Dexter Bereza" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Terça - 17h00</span>
+          <span> Desenvolvimento Nacional de Hardware Criptográfico</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        André Dexter Bereza <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Kryptus]</span>
+      </h3>
+                    
+      <p class="speakers-bio">André "Dexter" Bereza trabalha com segurança de sistemas computacionais há mais de 8 anos. Adquiriu o grau de Mestre pesquisando a segurança e auditoria de hardwares criptográficos e grau de Bacharel pesquisando o desenvolvimento de módulos de segurança criptográfica, ambos em Ciências da Computação pela UFSC. Trabalha como líder técnico de projetos na Kryptus Segurança da Informação de Campinas-SP. Lidera projetos de defesa cibernética, software embarcado, hardwares criptográficos, gerência de chaves criptográficas, segurança de redes, certificação digital, software de alto nível, desenvolvimento mobile, homologação de equipamentos de segurança da informação.</p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/gilberto_toptal.jpg" alt="Gilberto Garcia Jr" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Terça - 18h30</span>
+          <span> Trabalho Remoto</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Gilberto Garcia Jr <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Toptal]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Gilberto Garcia Jr é autor do livro “Lift Application Development Cookbook” que foi publicado em 2013 pela PacktPub. Formado em Filosofia pela Universidade de São Paulo, fez seu primeiro estágio como programador em 1999 e nunca mais saiu da área de Tecnologia. Tem como expertise escopo, arquitetura, desenvolvimento de software e manutenção de aplicações web nas linguagens Scala, Java, Haskell, Ruby, Clojure, JavaScript. Trabalha como Desenvolvedor, Entrevistador Técnico e é o Lider da Comunidade da Toptal em Florianópolis, cidade pela qual é apaixonado.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/cara_do_tarcisio.jpg" alt="Tarcísio Eduardo Moreira Crocomo" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          
+            <span class="speech-time">Terça - 18h30</span>
+            <span> <b>Minicurso:</b> Python</span>
+            <br>
+          
+            <span class="speech-time">Quarta - 10h10</span>
+            <span> <b>Minicurso:</b> Python</span>
+            <br>
+          
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Tarcísio Eduardo Moreira Crocomo <a href="http://lattes.cnpq.br/3683113061678014" target="_blank" title="Currículo Lattes">Currículo Lattes</a>
+        <span class="speakers-company">[UFSC]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Atualmente mestrando pelo PPGCC-UFSC, no Embedded Computing Lab (ECL), na área de otimização e eficiência energética. Formado em Ciência da Computação pela UFSC (2009-2013), foi membro do grupo PET Computação de 2010 a 2013. Trabalhou com desenvolvimento de software aplicativo para automação de modelagem e corte de peças de tecido, utilizando C++ e Python, na Audaces, de 2013 a 2015.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/fernando_siqueira.jpg" alt="Msc. Fernando de Lucca Siqueira" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quarta - 13h30</span>
+          <span> Uma abordagem fuzzy para o problema de recarga autônoma de robôs móveis</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Msc. Fernando de Lucca Siqueira <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[UFSC]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Fernando é doutorando em Engenharia de Automação e Sistemas na Universidade Federal de Santa Catarina. Possui mestrado e bacharelado em Ciência da Computação na mesma instituição. Atua como professor no Senac SC e professor Substituto no Centro Universitário Municipal de São José. Seu foco atual de pesquisa é em data mining de dados espaço-temporais em Robótica Móvel.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/pedro_penna.jpg" alt="Pedro H. Penna" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quarta - 14h30</span>
+          <span> O Sistema Operacional Nanvix</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Pedro H. Penna <a href="" target="_blank" title=""></a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Pedro H. Penna é estudante de mestrado em Ciência da Computação na Universidade Federal de Santa Catarina (UFSC) e pesquisador no Laboratório de Pesquisa em Sistemas Distribuídos (LaPeSD). Recebeu seu título de Bacharel em Ciência da Computação pela Pontifícia Universidade Católica de Minas Gerais (PUC Minas) em 2015, com os prêmios de Láurea Acadêmica (Summa Cum Laude) e Aluno Destaque em Ciência da Computação pela Sociedade Brasileira de Computação (SBC). Pedro possui experiência em pesquisa na área de Sistemas Operacionais, Arquitetura de Computadores e Computação de Alto Desempenho, atuando pontualmente nos seguintes tópicos: Balanceamento de Carga de Trabalho; Mapeamento de Threads; Computação de Alto Desempenho e Eficiência Energética</p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/julia_anitas.jpg" alt="Júlia Machado" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quarta - 16h00</span>
+          <span> Você já se desafiou hoje?</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Júlia Machado <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Anitas]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Idealizadora e fundadora do Anitas, formada em Comunicação, mas acabou trabalhando com gerência de projetos de software. Descobrindo como soldar componentes e programar, adora juntar as pessoas para aprender, cozinhar e mudar o mundo.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/rafaelWeingartner.png" alt="Rafael Weingärtner" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quarta - 17h00</span>
+          <span> Utilização de agentes autônomos para o gerenciamento de ambientes de computação em nuvem</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Rafael Weingärtner <a href="" target="_blank" title=""></a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Membro do PMC (Project management committee) e Committer do projeto Apache CloudStack. Trabalha a mais de três anos com ambientes de computação em nuvem criadas com a ferramenta de orquestração Apache CloudStack. Atuou como desenvolvedor Java Web para o projeto SAJ (sistema de automação da justiça) da empresa Softplan. Além disso, durante o mestrado, atuou como assistente de pesquisa para a Rede Nacional em Segurança da Informação e Criptografia (RENASIC). Também possui algumas certificações técnicas, como: Sun Certified Programmer para a Plataforma Java, SE 6 (CX-310-065); Oracle Certified Professional, Java EE 5 Web Component Developer (CX-310-083); A Oracle Certified Expert, Java Platform Enterprise Edition 6, Web Services Developer (1Z0-897).</p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/rodrigo_supero.jpg" alt="Rodrigo Oliveira" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quarta - 18h30</span>
+          <span> Inovação Oracle Cloud</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Rodrigo Oliveira <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Supero]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Mais de 10 anos de profissão e especialização em produtos Oracle, atuação em projetos de concepção ou melhorias de sistemas aplicativos personalizados e soluçõs Oracle Cloud para empresas da região Sul e Sudeste do país. Certificado pelo PMI® como PMP® - Project Management Professional. MBA em Gerenciamento de Projetos, Gestão Empresarial e Bacharel em Sistemas de Informação, sólidos conhecimentos em gestão de projetos de sistemas aplicativos e implementação de produtos Oracle.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/ranieri_salt.jpg" alt="Ranieri Althoff" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quinta - 10h10</span>
+          <span> <b>Minicurso</b>: Javascript</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Ranieri Althoff <a href="https://keybase.io/ranisalt" target="_blank" title="Página Pessoal">Página Pessoal</a>
+        <span class="speakers-company">[UFSC]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Ranieri é estudante de Ciência da Computação na Universidade Federal de Santa Catarina, trabalha com C++, Python e encontrou seu ambiente para desenvolvimento com Javascript. Defensor de uma web baseada em APIs e interfaces simples, desenvolveu o <a href="https://voucomerno.ru">voucomerno.ru</a> e os packages <a href="https://www.npmjs.com/package/argon2">argon2</a> e <a href="https://www.npmjs.com/package/sandra">sandra</a> para Node.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/dantas.png" alt="Mário Dantas" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quinta - 13h30</span>
+          <span> Fog Computing: Um novo paradigma computacional?</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Mário Dantas <a href="" target="_blank" title=""></a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Mario Dantas é Professor Titular do Departamento de Informática e Estatística (INE), do Programa de Pós-Graduação em Ciência da Computação (PPGCC) e Engenharia e Gestão do Conhecimento (PPGEGC), no Centro Tecnológico (CTC), da Universidade Federal de Santa Catarina (UFSC). Com doutorado em Ciência da Computação pela University of Souhtampton (UK), estágio pós-doutoral e visiting professor na University of Western Ontario (Canada). O Professor Dantas é autor de três livros e inúmeros artigos científicos publicados no Brasil, Alemanha, Áustria, Bélgica, Canadá, Chipre, Croacia, Estados Unidos, Finlândia, França,Grécia, Holanda, Inglaterra, Italia, Marrocos, México, Portugal, Rússia, Suíça, Tailândia e Tunísia nas áreas de redes de computadores, computação móvel e computação paralela e distribuída de alto desempenho. Em adição aos artigos, tem treze capítulos em livros editados nos Alemanha, Canadá, EUA, Holanda e Inglaterra sobre os tópicos de computação distribuída. Estes trabalhos renderam três prêmios internacionais e três nacionais. Mario Dantas foi Professor da Universidade de Brasília (UnB), além de ter trabalhado por mais de dez anos na Petrobrás (Departamento de Produção) e no Centro Tecnológico do Exército (Ctex), no suporte a ambientes de rede e ao desenvolvimento de aplicações distribuídas. Na UFSC têm atuado nos programas de Pos-Graduação de Ciência da Computação (PPGCC) e Engenharia e Gestão do Conhecimento (PPGEGC), cursos de especialização e graduação. Prof. Dantas já orientou inúmeros trabalhos de graduação, especialização, mestrado e doutorado em tópicos relativos à área de sistema de computação. Em adição, o Prof. Dantas tem atuado como consultor em diferentes projetos de pesquisa com a indústria nas áreas de redes, sistemas distribuídos, ambientes de alto desempenho e Internet of Things (IoT).</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/nadjia.jpg" alt="Nadjia Jandt Feller" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quinta - 14h30</span>
+          <span> Teste de software: um dia você precisará dele</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Nadjia Jandt Feller <a href="nadjiafeller@gmail.com" target="_blank" title="e-mail">e-mail</a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Mestre em Engenharia de Software pelo Programa de Pós-Graduação em Computação – UFRGS (2015). Analista de TI no Centro de Processamento de Dados da UFRGS, atuando como Analista de Teste na Divisão de Teste e Conformidade (2013 - atual). Trabalhando na área de Teste de Software desde 2009, com especial interesse em Automação de Teste, Testes de Aceitação de Usuário, Testes Exploratórios, Testes Ágeis e Testes Baseados em Modelos.</p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/marco_pixel.jpg" alt="Marco Burgin" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quinta - 16h00</span>
+          <span> Introdução a Lean Startup</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Marco Burgin <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Pixel]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Empreendedor e Co-Fundador da MinhaDietaOnline.com</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/sem_foto.jpg" alt="Prof. Dr. Giovani Gracioli" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quinta - 17h00</span>
+          <span> Utilizando a Unidade de Monitoramento de Desempenho em Sistemas de Tempo Real Multiprocessados</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Prof. Dr. Giovani Gracioli <a href="giovani.g@ufsc.br" target="_blank" title="e-mail">e-mail</a>
+        <span class="speakers-company">[UFSC Joinville]</span>
+      </h3>
+                    
+      <p class="speakers-bio"></p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/jean_hauck.png" alt="Jean Carlo Rossa Hauck" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quinta - 18h30</span>
+          <span> Use-Case 2.0 - Incorporando práticas ágeis aos Use-Cases</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Jean Carlo Rossa Hauck <a href="" target="_blank" title=""></a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Jean Hauck é doutor em Engenharia do Conhecimento e mestre em Ciência da Computação pela UFSC e graduado em Ciência da Computação pela UNIVALI. Adquiriu experiência prática na indústria liderando projetos de software para grandes clientes e com essa experiência, prestou consultorias nas áreas de Modelagem, Arquitetura e Melhoria de Processos. Em paralelo foi também professor na UNISUL e UNIVALI. Ministrou ainda diversas disciplinas de Pós-Graduação na UNISUL, UNIVALI, UNIPLAC, SOCIESC e outras. Foi pesquisador visitante no Regulated Software Research Centre - Irlanda. Atualmente é Professor no INE/UFSC e vice-coordenador do Grupo de Qualidade de Software - GQS.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/lahana_js4girls.jpg" alt="Lahana da Silva Lameira" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Quinta - 18h30</span>
+          <span> <b>Minicurso</b>: Acessibilidade na Web</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Lahana da Silva Lameira <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[JS4Girls]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Lahana da Silva Lameira é desenvolvedora front-end na Neoway, universitária de Sistemas de Informação e recentemente co-organizadora e docente voluntária no projeto JS4Girls de Floripa, um workshop com objetivo de atrair, capacitar e certificar cada vez mais mulheres para a área de tecnologia. Atua principalmente na criação/desenvolvimento de sistemas e telas web.</p>
+    </li>
+    
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          
+            <span class="speaker-photo">
+              <img class="photo" src="themes/seccom/img/michelle_js4girls.jpg" alt="Michelle Frasson" itemprop="image">
+            </span>
+          
+          <h3 class="speakers-name">
+            Michelle Frasson 
+            <span class="speakers-company">[JS4Girls]</span>
+          </h3>
+                        
+          <p class="speakers-bio">Michelle Frasson (Mi) acadêmica de Sistemas de Informação, Data Quality na Neoway. Durante muito tempo tester, recentemente  auxiliando no JS4Girls, evento voltado para o ensino de programação para mulheres. Atua diretamente na área de banco de dados, mas possui uma queda por web, principalmente web para todos, onde vê na prática todos os dias a web não pensada, prejudicar os usuários.</p>
+        
+      </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/marcos_pixel.jpg" alt="Marcos Schead" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Sexta - 10h10</span>
+          <span> <b>Minicurso:</b> Git</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Marcos Schead <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Pixel]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Schead é estudante de Ciências da Computação na Universidade Federal de Santa Catarina. Começou a trabalhar no Laboratório Bridge com testes exploratórios baseado em casos de uso no projeto e-SUS AB, que faz referência ao processo de informatização qualificada do SUS. Logo depois, migrou para outro projeto do mesmo laboratório, mas como desenvolvedor Full Stack, o SISMOB, que realiza o monitoramento e gerenciamento de obras da saúde. No ano de 2016, ingressou na empresa junior Pixel, onde busca complementar os estudos técnicos vistos em sala de aula, ao empreendedorismo e gerência de projetos que uma empresa junior oferece.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/celio_bridge.png" alt="Célio Cunha (A Confirmar)" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Sexta - 13h30</span>
+          <span> Estratégia e-Saúde no Brasil</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Célio Cunha (A Confirmar) <a href="http://lattes.cnpq.br/9919593157262527" target="_blank" title="Lattes">Lattes</a>
+        <span class="speakers-company">[Bridge]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Célio Cunha possui 30 anos de experiência em TI, formação em Administração de Empresas e Programação de Computadores. Nos últimos 15 anos atuou no Ministério da Saúde como Coordenador do Núcleo de Tecnologia da Informação do Departamento de Atenção Básica. Desde 2012 trabalha na gestão de projetos do Laboratório Bridge e colabora na definição dos novos desafios e no acompanhamento dos resultados. Gosta da simplicidade e acredita no que faz.</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/leonardo_sacht_color.jpg" alt="Leonardo Koller Sacht" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Sexta - 14h30</span>
+          <span> Jaulas Aninhadas</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Leonardo Koller Sacht <a href="http://lattes.cnpq.br/9919593157262527" target="_blank" title="Lattes">Lattes</a>
+        
+      </h3>
+                    
+      <p class="speakers-bio">Professor Adjunto do Departamento de Matemática da UFSC. Doutor em Matemática pelo IMPA, Mestre em Matemática (opção Computação Gráfica) pelo IMPA e Bacharel em Matemática e Computação Científica pela UFSC. Áreas de pesquisa: processamento de imagens, processamento geométrico e análise numérica.</p>
+    </li>
+    
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/luiz_safeweb.png" alt="Luiz Carlos Zancanella" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Sexta - 16h00</span>
+          <span> Segurança da Informação nas Empresas</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Luiz Carlos Zancanella <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Safeweb]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Mestre em Engenharia de Sistemas, UFRJ, 1983; Doutor em Ciência da Computação, UFRGS, 1998; Professor aposentado do INE-UFSC, 2013; Diretor-Presidente da Safeweb</p>
+    </li>
+    
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/seccom/img/gustavo_blueticket.jpg" alt="Gustavo Zomer" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">Sexta - 17h00</span>
+          <span> Porquê você não deve iniciar sua Startup com Micro Services?</span>
+        
+      </h3>
+
+      <h3 class="speakers-name">
+        Gustavo Zomer <a href="" target="_blank" title=""></a>
+        <span class="speakers-company">[Blueticket]</span>
+      </h3>
+                    
+      <p class="speakers-bio">Gustavo Zomer é Engenheiro de Controle e Automação pela Universidade Federal de Santa Catarina (UFSC). Tem mais de 5 anos de experências criando novos produtos digitais e startups, ajudando outros empreendedores a tirarem a ideia do papel e criando novos produtos Web e Mobile. Empreendedor por natureza, fundou a MoreCerto e ganhou o Programa Sinapse de Inovação, além de ter criado uma das primeiras startups de Realidade Aumentada do Brasil. Hoje atua como Head de Produto na Blueticket, ajudando a empresa a entregar novos produtos e soluções ao mesmo tempo que busca renovação da tecnologia para garantir escalabilidade dos produtos.</p>
+    </li>
+    
+  
+
+</ul>
+
+  </section>
+
+  <!-- / SPEAKERS -->
+
+  <!-- SPONSORS -->
+
+  <section class="sponsors" id="sponsors">
+    <h2 class="section-title">Patrocínio</h2>
+<ul class="sponsors-list">
+
+
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://kryptus.com" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/kryptus.png" alt="Kryptus" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://www.supero.com.br/supero/" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/supero.png" alt="Supero" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://www.blueticket.com.br" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/blueticket.png" alt="Blueticket" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://safeweb.com.br" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/safeweb.svg" alt="Safeweb" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://www.way2.com.br/" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/logo-way2.png" alt="Way2" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="https://bridge.ufsc.br/" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/logo-bridge.png" alt="Bridge" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="https://www.toptal.com/#connect-just-bright-software-freelancers" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/logo-toptal.png" alt="Toptal" class="photo" itemprop="image">
+    </a>
+  </li>
+
+
+
+
+</ul>
+
+  </section>
+
+  <!-- / SPONSORS -->
+
+  <!-- PARTNERS -->
+
+  <section class="partners" id="partners">
+    <h2 class="section-title">Parcerias</h2>
+<ul class="partners-list">
+
+
+  <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://anitas.com.br" class="partner-logo partner-link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/logo-anitas.png" alt="Anitas" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://webschool.io/js4girls/" class="partner-logo partner-link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/logo-js4girls.jpg" alt="JS4Girls" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://www.ejpixel.com.br/" class="partner-logo partner-link" itemprop="url" target="_blank">
+      <img src="themes/seccom/img/logo-pixel.jpg" alt="Pixel" class="photo" itemprop="image">
+    </a>
+  </li>
+
+
+
+
+</ul>
+
+  </section>
+
+  <!-- / PARTNERS -->
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contato</h2>
+<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ducimus neque amet corrupti ex temporibus similique.</p> -->
+<!--
+<form method="post" action="contact.php" id="form" class="form">
+  <div class="control-group control-group-name">
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name" placeholder="Seu nome">
+  </div>
+  <div class="control-group control-group-email">
+    <label for="email">E-mail</label>
+  <input type="email" name="email" id="email" placeholder="Seu e-mail">
+  </div>
+  <div class="control-group">
+    <label for="message">Mensagem</label>
+  <textarea name="" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+  </div>
+  <input class="btn btn-send" type="submit" value="Enviar">
+</form>
+-->
+<p>E-mail: <a href="mailto:pet.comp.ufsc@gmail.com">pet.comp.ufsc@gmail.com</a></p>
+
+  </section>
+
+  <!-- / CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <p>Made with ♥ by <a href="https://github.com/braziljs/conf-boilerplate" target="_blank">Conf Boilerplate</a> :)</p>
+        </footer>
+        <!-- / FOOTER -->
+      </div>
+    </div>
+    <!-- / CONTENT -->
+
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="themes/seccom/js/jquery.js"><\/script>')</script>
+
+  
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="themes/seccom/js/main.js"></script>
+  
+
+  <!-- GOOGLE ANALYTICS -->
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3078789-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+  <!-- /GOOGLE ANALYTICS -->
+
+  <script>
+select_sched(document.getElementsByClassName("schedule-day")[0], 0);
+  </script>
+
+</body>
+</html>
